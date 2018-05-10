@@ -17,6 +17,7 @@ class Pictures extends Migration
             $table->increments('id');
             $table->string('url');
             $table->integer('admin_id')->unsigned();
+            $table->string('description')->nullable();
             $table->timestamps();
         });
     }
