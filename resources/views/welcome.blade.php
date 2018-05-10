@@ -209,21 +209,24 @@
 
                </div>
                <!--/.HEADER LINE END-->
-               <div class="row" >
+               <div class="row" style="margin:0 auto">
 
-
+                   @foreach($faculties as $faculty)
                    <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
+
                        <div class="faculty-div">
-                           <h3 >Faculty 1</h3>
-                           <hr />
-                           <h4>Faculty <br /> Department/Subject</h4>
-                           <p >
-                               Description about Faculty
 
-                           </p>
+                               <h3 >{{$faculty->fname}} {{$faculty->lname}}</h3>
+                               <hr />
+                               <h4>{{$faculty->qualification}} <br /> {{$faculty->subject}}</h4>
+                               <p >
+                                   {{$faculty->description}}
+                               </p>
+
                        </div>
-                   </div>
 
+                   </div>
+                   @endforeach
                </div>
            </div>
        </div>
