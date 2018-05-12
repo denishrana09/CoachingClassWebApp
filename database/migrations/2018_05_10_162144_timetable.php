@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Pictures extends Migration
+class Timetable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,14 @@ class Pictures extends Migration
      */
     public function up()
     {
-        Schema::create('pictures', function (Blueprint $table) {
+        Schema::create('timetable', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('url');
-            $table->integer('admin_id')->unsigned();
-            $table->string('description')->nullable();
+            $table->string('Day');
+            $table->string('S_Time');
+            $table->string('E_Time');
+            $table->string('Subject');
+            $table->string('Batch');
+
             $table->timestamps();
         });
     }

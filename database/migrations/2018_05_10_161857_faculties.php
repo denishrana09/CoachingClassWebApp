@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Pictures extends Migration
+class Faculties extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,14 @@ class Pictures extends Migration
      */
     public function up()
     {
-        Schema::create('pictures', function (Blueprint $table) {
+        Schema::create('faculties', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('url');
-            $table->integer('admin_id')->unsigned();
+            $table->string('fname');
+            $table->string('lname');
+            $table->string('qualification');
+            $table->string('Subject');
             $table->string('description')->nullable();
+
             $table->timestamps();
         });
     }

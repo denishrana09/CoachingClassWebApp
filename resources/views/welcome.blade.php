@@ -1,5 +1,4 @@
 <!doctype html>
-{{ asset('assets/css/style.css') }}
 <link href="{{ asset('assets/css/font-awesome.min.css') }}" rel="stylesheet" />
 <link href="{{ asset('assets/css/flexslider.css') }}" rel="stylesheet" />
 <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" />
@@ -11,7 +10,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Shree Vidhya Coaching Classes</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -210,31 +209,34 @@
 
                </div>
                <!--/.HEADER LINE END-->
-               <div class="row" >
-
-
+               <div class="row" style="margin:0 auto">
+                   @foreach($faculties as $faculty)
                    <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
+
                        <div class="faculty-div">
-                           <h3 >Faculty 1</h3>
-                           <hr />
-                           <h4>Faculty <br /> Department/Subject</h4>
-                           <p >
-                               Description about Faculty
 
-                           </p>
+                               <h3 >{{$faculty->fname}} {{$faculty->lname}}</h3>
+                               <hr />
+                               <h4>{{$faculty->qualification}} <br /> {{$faculty->subject}}</h4>
+                               <p >
+                                   {{$faculty->description}}
+                               </p>
+
                        </div>
-                   </div>
 
+                   </div>
+                   @endforeach
                </div>
            </div>
        </div>
        <!-- FACULTY SECTION END-->
+       <!-- Gallery Section starts -->
        <div id="contact-sec"   >
            <div class="overlay">
                <div class="container set-pad">
                    <div class="row text-center">
                        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" style="margin:0 auto">
-                           <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" >CONTACT US  </h1>
+                           <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" >Gallery</h1>
                            <p data-scroll-reveal="enter from the bottom after 0.3s">
                                Contact Information
                            </p>
@@ -246,27 +248,25 @@
 
 
                        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2" style="margin:0 auto">
-                           <form>
-                               <div class="form-group">
-                                   <input type="text" class="form-control "  required="required" placeholder="Your Name" />
-                               </div>
-                               <div class="form-group">
-                                   <input type="text" class="form-control " required="required"  placeholder="Your Email" />
-                               </div>
-                               <div class="form-group">
-                                   <textarea name="message" required="required" class="form-control" style="min-height: 150px;" placeholder="Message"></textarea>
-                               </div>
-                               <div class="form-group">
-                                   <button type="submit" class="btn btn-info btn-block btn-lg">SUBMIT REQUEST</button>
-                               </div>
+                           <div class="row" >
 
-                           </form>
+                                @foreach($pictures as $picture)
+                               <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
+                                   <div class="faculty-div" style="word-break: break-all;">
+
+                                       <img src="{{asset('assets/img/gallery/'.$picture->url)}}"  style="max-height: 300px; max-width: 400px;" class="img-rounded" />
+                                       <h4>{{$picture->description}}</h4>
+                                   </div>
+                               </div>
+                                @endforeach
+                           </div>
                        </div>
 
                    </div>
                </div>
            </div>
        </div>
+       <!-- Gallery Section Starts-->
        <div class="container">
            <div class="row set-row-pad"  >
                <div style="margin:0 auto" class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
