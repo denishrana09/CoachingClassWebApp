@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\faculty;
+use App\Pictures;
 use Illuminate\Http\Request;
 
-class FacultiesController extends Controller
+class AdminController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +16,8 @@ class FacultiesController extends Controller
     public function index()
     {
         $faculties = faculty::all();
-        return view('our-faculty',['faculties'=>$faculties]);
+        $pictures = Pictures::all();
+        return view('admin.adminhome',['faculties'=>$faculties,'pictures'=>$pictures]);
     }
 
     /**
@@ -42,10 +44,10 @@ class FacultiesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\faculty  $faculty
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(faculty $faculty)
+    public function show($id)
     {
         //
     }
@@ -53,10 +55,10 @@ class FacultiesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\faculty  $faculty
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(faculty $faculty)
+    public function edit($id)
     {
         //
     }
@@ -65,10 +67,10 @@ class FacultiesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\faculty  $faculty
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, faculty $faculty)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -76,10 +78,10 @@ class FacultiesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\faculty  $faculty
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(faculty $faculty)
+    public function destroy($id)
     {
         //
     }

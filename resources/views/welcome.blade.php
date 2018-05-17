@@ -254,7 +254,9 @@
                                <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
                                    <div class="faculty-div" style="word-break: break-all;">
 
-                                       <img src="{{asset('assets/img/gallery/'.$picture->url)}}"  style="max-height: 300px; max-width: 400px;" class="img-rounded" />
+                                       <img src="{{asset('assets/img/Gallery/'.$picture->url)}}"  style="max-height: 300px; max-width: 400px;" class="img-rounded" />
+                                       {{--<img src="assets/img/gallery/1.jpg"  style="max-height: 300px; max-width: 400px;" class="img-rounded" />--}}
+                                       {{--<img src="assets/img/gallery/1.jpg"  style="max-height: 300px; max-width: 400px;" class="img-rounded" />--}}
                                        <h4>{{$picture->description}}</h4>
                                    </div>
                                </div>
@@ -305,7 +307,7 @@
        <!--/.HEADER LINE END-->
 
     </body>
-        @endsection
+    @endsection
 
     <!--  Jquery Core Script -->
     <script src="{{ asset('/assets/js/jquery-1.10.2.js') }}" defer></script>
