@@ -23,3 +23,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/faculty', 'FacultiesController@index')->name('faculty');
 
 Route::get('/admin', 'AdminController@index')->name('admin');
+
+Route::resource('facultyCRUD','FacultyCRUDController');
+
+Route::resource('pictureCRUD','PictureCRUDController');
+

@@ -1,7 +1,7 @@
 <!doctype html>
 <link href="{{ asset('assets/css/font-awesome.min.css') }}" rel="stylesheet" />
 <link href="{{ asset('assets/css/flexslider.css') }}" rel="stylesheet" />
-{{--<link href="{{ asset('assets/css/adminstyle.css') }}" rel="stylesheet" />--}}
+<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
 
 <html lang="{{ app()->getLocale() }}">
@@ -75,23 +75,7 @@
 @section('contentforhome')
     <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <li class="dropdown " type="none">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manage Faculty <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Add Faculty</a></li>
-                    <li><a href="#">Remove Faculty</a></li>
-                </ul>
-            </li><li class="dropdown" type="none">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manage Photos <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Add Photos</a></li>
-                    <li><a href="#">Remove Photos</a></li>
-                </ul>
-            </li>
-        </div>
-    </nav>
+
 
     <div id="footer">
         <a href="#" style="color: #fff" target="_blank"></a>

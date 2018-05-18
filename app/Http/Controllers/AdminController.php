@@ -15,9 +15,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $faculties = faculty::all();
-        $pictures = Pictures::all();
-        return view('admin.adminhome',['faculties'=>$faculties,'pictures'=>$pictures]);
+        return view('admin.adminhome');
     }
 
     /**

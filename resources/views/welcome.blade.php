@@ -67,6 +67,9 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            #faculty-sec {
+                background-image: url({{asset('assets/img/bgblue1.jpeg')}});
+            }
         </style>
     </head>
     @extends('layouts.app')
