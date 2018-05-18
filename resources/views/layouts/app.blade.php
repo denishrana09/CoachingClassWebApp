@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Shree Vidhya Coaching Classes') }}</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -66,11 +66,10 @@
                 </div>
             </div>
         </nav>
-    </div>
         @yield('contentforhome')
         <main class="py-4">
             @yield('content')
         </main>
-
+    </div>
 </body>
 </html>
