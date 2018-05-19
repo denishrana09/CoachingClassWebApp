@@ -20,7 +20,7 @@
             </ul>
         </div>
     @endif
-    {!! Form::open(array('route' => 'pictureCRUD.store','method'=>'POST')) !!}
+    {!! Form::open(array('route' => 'pictureCRUD.store','method'=>'POST','enctype'=>'multipart/form-data')) !!}
     @include('PictureCRUD.form')
     {!! Form::close() !!}
 @endsection

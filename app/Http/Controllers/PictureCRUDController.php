@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Pictures;
 use Illuminate\Http\Request;
-
+use File;
 class PictureCRUDController extends Controller
 {
     /**
@@ -27,10 +27,22 @@ class PictureCRUDController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'url' => 'required',
-            'admin_id' => 'required',
+            'url',
+            'admin_id',
             'description',
         ]);
+
+
+        $request->merge(['admin_id'=>'1']);
+//        $request->merge(['description'=>'']);
+
+//        $photoName = time().'.'.$request->myfile->getClientOriginalExtension();
+//        $photoName = $request->myfile->getClientOriginalName() .'.'.$request->myfile->getClientOriginalExtension();
+        $photoName = $request->myfile->getClientOriginalName();
+        $request->myfile->move(public_path('assets/img/Gallery'), $photoName);
+
+
+        $request->merge(['url'=>$request->myfile->getClientOriginalName()]);
         Pictures::create($request->all());
         return redirect()->route('pictureCRUD.index')
             ->with('success','Picture added successfully');
@@ -62,6 +74,11 @@ class PictureCRUDController extends Controller
 
     public function destroy($id)
     {
+        $mypic = Pictures::find($id);
+        $image_path = public_path('assets/img/Gallery/'.$mypic->url);  // Value is not URL but directory file path
+        if(File::exists($image_path)) {
+            File::delete($image_path);
+        }
         Pictures::find($id)->delete();
         return redirect()->route('pictureCRUD.index')
             ->with('success','Picture deleted successfully');
