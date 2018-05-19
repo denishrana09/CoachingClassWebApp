@@ -19,6 +19,7 @@
         <tr>
             <th>No</th>
             <th>url</th>
+            <th>Image</th>
             <th>Admin id</th>
             <th>Description</th>
             <th width="280px">Action</th>
@@ -27,6 +28,7 @@
             <tr>
                 <td>{{ ++$i }}</td>
                 <td>{{ $picture->url}}</td>
+                <td><img src="{{asset('assets/img/Gallery/'.$picture->url)}}"  style="max-height: 150px; max-width: 200px;" class="img-rounded" /></td>
                 <td>{{ $picture->admin_id}}</td>
                 <td>{{ $picture->description}}</td>
                 <td>
