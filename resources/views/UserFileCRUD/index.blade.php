@@ -3,10 +3,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Picture CRUD</h2>
+                <h2>UserFile CRUD</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('pictureCRUD.create') }}"> Add New Picture</a>
+                <a class="btn btn-success" href="{{ route('userfileCRUD.create') }}"> Add New PDF</a>
             </div>
         </div>
     </div>
@@ -18,28 +18,28 @@
     <table class="table table-bordered">
         <tr>
             <th>No</th>
-            <th>url</th>
-            <th>Image</th>
+            <th>pdf</th>
             <th>Admin id</th>
+            <th>Std</th>
             <th>Description</th>
             <th width="280px">Action</th>
         </tr>
-        @foreach ($pictures as $picture)
+        @foreach ($userfiles as $userfile)
             <tr>
                 <td>{{ ++$i }}</td>
-                <td>{{ $picture->url}}</td>
-                <td><img src="{{asset('assets/img/Gallery/'.$picture->url)}}"  style="max-height: 150px; max-width: 200px;" class="img-rounded" /></td>
-                <td>{{ $picture->admin_id}}</td>
-                <td>{{ $picture->description}}</td>
+                <td><a href="{{ asset('assets/pdf/'.$userfile->url) }}" target="_blank">{{ $userfile->url}}</a></td>
+                <td>{{ $userfile->admin_id}}</td>
+                <td>{{ $userfile->std}}</td>
+                <td>{{ $userfile->description}}</td>
                 <td>
-                    <a class="btn btn-info" href="{{ route('pictureCRUD.show',$picture->id) }}">Show</a>
-                    <a class="btn btn-primary" href="{{ route('pictureCRUD.edit',$picture->id) }}">Edit</a>
-                    {!! Form::open(['method' => 'DELETE','route' => ['pictureCRUD.destroy', $picture->id],'style'=>'display:inline']) !!}
+                    <a class="btn btn-info" href="{{ route('userfileCRUD.show',$userfile->id) }}">Show</a>
+                    <a class="btn btn-primary" href="{{ route('userfileCRUD.edit',$userfile->id) }}">Edit</a>
+                    {!! Form::open(['method' => 'DELETE','route' => ['userfileCRUD.destroy', $userfile->id],'style'=>'display:inline']) !!}
                     {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
                     {!! Form::close() !!}
                 </td>
             </tr>
         @endforeach
     </table>
-    {{ $pictures->links() }}
+    {{ $userfiles->links() }}
 @endsection
