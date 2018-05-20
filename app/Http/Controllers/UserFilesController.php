@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\faculty;
+use App\UserFile;
 use Illuminate\Http\Request;
 
-class FacultiesController extends Controller
+class UserFilesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,7 @@ class FacultiesController extends Controller
      */
     public function index()
     {
-        $faculties = faculty::all();
-        return view('our-faculty',['faculties'=>$faculties]);
+        //
     }
 
     /**
@@ -42,10 +41,10 @@ class FacultiesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\faculty  $faculty
+     * @param  \App\UserFile  $userFile
      * @return \Illuminate\Http\Response
      */
-    public function show(faculty $faculty)
+    public function show(UserFile $userFile)
     {
         //
     }
@@ -53,10 +52,10 @@ class FacultiesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\faculty  $faculty
+     * @param  \App\UserFile  $userFile
      * @return \Illuminate\Http\Response
      */
-    public function edit(faculty $faculty)
+    public function edit(UserFile $userFile)
     {
         //
     }
@@ -65,10 +64,10 @@ class FacultiesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\faculty  $faculty
+     * @param  \App\UserFile  $userFile
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, faculty $faculty)
+    public function update(Request $request, UserFile $userFile)
     {
         //
     }
@@ -76,10 +75,10 @@ class FacultiesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\faculty  $faculty
+     * @param  \App\UserFile  $userFile
      * @return \Illuminate\Http\Response
      */
-    public function destroy(faculty $faculty)
+    public function destroy(UserFile $userFile)
     {
         //
     }
