@@ -4,10 +4,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit Picture</h2>
+                <h2>Edit PDF</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('pictureCRUD.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('userfileCRUD.index') }}"> Back</a>
             </div>
         </div>
     </div>
@@ -21,7 +21,7 @@
             </ul>
         </div>
     @endif
-    {!! Form::model($picture, ['method' => 'PATCH','route' => ['pictureCRUD.update', $picture->id]]) !!}
-    @include('PictureCRUD.form')
+    {!! Form::model($userfile, ['method' => 'PATCH','route' => ['userfileCRUD.update', $userfile->id]]) !!}
+    @include('UserFileCRUD.form')
     {!! Form::close() !!}
 @endsection

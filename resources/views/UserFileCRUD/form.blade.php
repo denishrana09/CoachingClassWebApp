@@ -1,28 +1,30 @@
 <div class="row">
-    {{--<div class="col-xs-12 col-sm-12 col-md-12">--}}
-        {{--<div class="form-group">--}}
-            {{--<strong>URL:</strong>--}}
-            {{--{!! Form::text('url', null, array('placeholder' => 'URL','class' => 'form-control')) !!}--}}
-        {{--</div>--}}
-    {{--</div>--}}
-
-    {{--{{Form::open(['files' => true])}}--}}
-    {{--{{Form::label('user_photo', 'Add Photo : ',['class' => 'control-label'])}}--}}
-    {{--{{Form::file('user_photo')}}--}}
-    {{--{{Form::submit('Save', ['class' => 'btn btn-success'])}}--}}
-    {{--{{Form::close()}}--}}
-
-    <input type="file" name="myfile" id="myfile">
-
-    {{--<div class="col-xs-12 col-sm-12 col-md-12">--}}
-        {{--<div class="form-group">--}}
-            {{--<strong>Admin id:</strong>--}}
-            {{--{!! Form::text('admin_id', null, array('placeholder' => 'Admin id','class' => 'form-control')) !!}--}}
-        {{--</div>--}}
-    {{--</div>--}}
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
-            <strong>Description:</strong>
+            <strong>Select PDF :</strong>
+            <input type="file" name="myfile" id="myfile">
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <strong>Select std :</strong>
+            {{--<select name="std">--}}
+                {{--<option value="">Select</option>--}}
+                {{--<option value="9">9</option>--}}
+                {{--<option value="10">10</option>--}}
+            {{--</select>--}}
+            <select name="std">
+                @for ($i = 5; $i <= 12; $i++)
+                    <option value="{{ $i }}">{{ $i }}</option>
+                @endfor
+            </select>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <strong>Description(Optional) :</strong>
             {!! Form::text('description', null, array('placeholder' => 'Description','class' => 'form-control')) !!}
         </div>
     </div>

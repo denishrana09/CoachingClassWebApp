@@ -28,5 +28,5 @@ Route::resource('facultyCRUD','FacultyCRUDController');
 
 Route::resource('pictureCRUD','PictureCRUDController');
 
-Route::resource('userfileCRUD','UserFilesCRUDController');
+Route::resource('userfileCRUD','UserFilesController');
 
