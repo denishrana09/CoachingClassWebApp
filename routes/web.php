@@ -14,7 +14,19 @@
 //Route::get('/', function () {
 //    return view('welcome');
 //});
-Route::get('/','HomePageController@index');
+Route::get('/','HomePageController@index');//
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/faculty', 'FacultiesController@index')->name('faculty');
+
+Route::get('/admin', 'AdminController@index')->name('admin');
+
+Route::resource('facultyCRUD','FacultyCRUDController');
+
+Route::resource('pictureCRUD','PictureCRUDController');
+
+Route::resource('userfileCRUD','UserFilesController');
+
