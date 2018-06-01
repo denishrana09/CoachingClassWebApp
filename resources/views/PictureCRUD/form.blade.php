@@ -12,7 +12,7 @@
     {{--{{Form::submit('Save', ['class' => 'btn btn-success'])}}--}}
     {{--{{Form::close()}}--}}
 
-    <input type="file" name="myfile" id="myfile">
+    <input type="file" name="myfile" accept="image/*" id="myfile">
 
     {{--<div class="col-xs-12 col-sm-12 col-md-12">--}}
         {{--<div class="form-group">--}}

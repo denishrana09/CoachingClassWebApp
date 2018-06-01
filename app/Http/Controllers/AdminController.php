@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\faculty;
-use App\Pictures;
+
+
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -25,7 +25,8 @@ class AdminController extends Controller
      */
     public function create()
     {
-        //
+        return null;
+
     }
 
     /**
@@ -36,7 +37,7 @@ class AdminController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return null;
     }
 
     /**
@@ -47,7 +48,7 @@ class AdminController extends Controller
      */
     public function show($id)
     {
-        //
+        return null;
     }
 
     /**
@@ -58,7 +59,7 @@ class AdminController extends Controller
      */
     public function edit($id)
     {
-        //
+        return null;
     }
 
     /**
@@ -70,7 +71,7 @@ class AdminController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        return null;
     }
 
     /**
@@ -81,6 +82,6 @@ class AdminController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return null;
     }
 }

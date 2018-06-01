@@ -2,7 +2,7 @@
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Select PDF :</strong>
-            <input type="file" name="myfile" id="myfile">
+            <input type="file" accept="application/pdf" name="myfile" id="myfile">
         </div>
     </div>
 
