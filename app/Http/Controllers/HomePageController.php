@@ -6,6 +6,7 @@ use App\TimeTable;
 use Illuminate\Http\Request;
 use App\faculty;
 use App\Pictures;
+use Illuminate\Support\Facades\DB;
 
 
 class HomePageController extends Controller
@@ -17,9 +18,11 @@ class HomePageController extends Controller
      */
     public function index()
     {
-        $faculties = faculty::all();
+        $faconind = DB::table('faculties')->where('onIndex','=',1)->get();
+        $faculties =DB::table('faculties')->where('onIndex','<>',1)->get();
         $pictures = Pictures::all();
-        return view('welcome',['faculties'=>$faculties,'pictures'=>$pictures]);
+        $files = DB::table('user_files')->orderBy('std','asc')->get();
+        return view('welcome',['faculties'=>$faculties,'pictures'=>$pictures,'faconind'=>$faconind,'files'=>$files]);
     }
 
     /**

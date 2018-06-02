@@ -17,9 +17,11 @@ class Faculties extends Migration
             $table->increments('id');
             $table->string('fname');
             $table->string('lname');
+            $table->string('path')->nullable();
             $table->string('qualification');
             $table->string('Subject');
             $table->string('description')->nullable();
+            $table->boolean('onIndex');
 
             $table->timestamps();
         });

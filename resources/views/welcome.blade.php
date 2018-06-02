@@ -2,6 +2,15 @@
 <link href="{{ asset('assets/css/font-awesome.min.css') }}" rel="stylesheet" />
 <link href="{{ asset('assets/css/flexslider.css') }}" rel="stylesheet" />
 <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" />
+<link rel="stylesheet" href="{{asset('css/animate.css')}}">
+<!-- Icomoon Icon Fonts-->
+<link rel="stylesheet" href="{{asset('css/icomoon.css')}}">
+<!-- animatedresponsiveImagegrid  -->
+<link rel="stylesheet" href="{{asset('css/animatedresponsiveImagegrid.css')}}">
+<!-- Magnifoc Popup  -->
+<link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}">
+
+<link rel="stylesheet" href="{{asset('css/style.css')}}">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
 
 <html lang="{{ app()->getLocale() }}">
@@ -199,7 +208,7 @@
            </div>
        </div>
        <!-- FEATURES SECTION END-->
-       <div id="faculty-sec" >
+       <div id="faculty-sec" style="background-color: #000000" >
            <div class="container set-pad">
                <div class="row text-center">
                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" style="margin:0 auto">
@@ -212,23 +221,66 @@
 
                </div>
                <!--/.HEADER LINE END-->
-               <div class="row" style="margin:0 auto">
-                   @foreach($faculties as $faculty)
-                   <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
+               <div class="row" style="display:flex;justify-content:center;align-items:center;">
+                   @foreach($faconind as $faculty)
+                   <div  class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
 
-                       <div class="faculty-div">
+                       <div>
 
+                           <img style="float: left" src="{{asset('assets/img/faculty/'.$faculty->path)}}"/>
+                            <div style="float: right">
                                <h3 >{{$faculty->fname}} {{$faculty->lname}}</h3>
                                <hr />
-                               <h4>{{$faculty->qualification}} <br /> {{$faculty->subject}}</h4>
+                               <h4>{{$faculty->qualification}} <br /> {{$faculty->Subject}}</h4>
                                <p >
                                    {{$faculty->description}}
                                </p>
+                            </div>
 
                        </div>
 
                    </div>
                    @endforeach
+
+               </div>
+               <div style="display:flex;justify-content:center;align-items:center;">
+
+                       <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                           Show All
+                       </a>
+                   <div class="collapse" id="collapseExample"  >
+                       <div >
+                           <div class="row" style="display:flex;justify-content:center;align-items:center;">
+                               <table >
+                                   <tr>
+                                   <th>Name</th>
+                                       <th></th>
+                                       <th>Qualification</th>
+                                       <th></th>
+                                       <th>Subject</th>
+                                   </tr>
+                               @foreach($faculties as $faculty)
+                                   <div  class="col-lg-4  col-md-4 col-sm-4" >
+
+                                       <div>
+
+                                           <div style="float: right">
+                                        <tr><td><h3 >{{$faculty->fname}} {{$faculty->lname}}</h3></td><td></td>
+
+                                            <td><h4>{{$faculty->qualification}} <br /></h4></td><td></td><td><h4> {{$faculty->Subject}}</h4></td>
+
+                                           </div>
+
+                                       </div>
+
+                                   </div>
+                               @endforeach
+                               </table>
+
+                           </div>
+
+                       </div>
+                   </div>
                </div>
            </div>
        </div>
@@ -241,37 +293,112 @@
                        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" style="margin:0 auto">
                            <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" >Gallery</h1>
                            <p data-scroll-reveal="enter from the bottom after 0.3s">
-                               Contact Information
+
                            </p>
                        </div>
 
                    </div>
                    <!--/.HEADER LINE END-->
-                   <div class="row set-row-pad"  data-scroll-reveal="enter from the bottom after 0.5s" >
+                   <div class="row" >
+                   {{--@foreach($pictures as $picture)--}}
+                               {{--<div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">--}}
+                                   {{--<div class="faculty-div" >--}}
 
-
-                       <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2" style="margin:0 auto">
-                           <div class="row" >
-
+                                       {{--<img src="{{asset('assets/img/Gallery/'.$picture->url)}}"  style="max-height: 300px; max-width: 400px;" class="img-rounded" />--}}
+                                       {{--<img src="assets/img/gallery/1.jpg"  style="max-height: 300px; max-width: 400px;" class="img-rounded" />--}}
+                                       {{--<img src="assets/img/gallery/1.jpg"  style="max-height: 300px; max-width: 400px;" class="img-rounded" />--}}
+                                       {{--<h4>{{$picture->description}}</h4>--}}
+                                   {{--</div>--}}
+                               {{--</div>--}}
+                                {{--@endforeach--}}
                                 @foreach($pictures as $picture)
-                               <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
-                                   <div class="faculty-div" style="word-break: break-all;">
-
-                                       <img src="{{asset('assets/img/Gallery/'.$picture->url)}}"  style="max-height: 300px; max-width: 400px;" class="img-rounded" />
-                                       {{--<img src="assets/img/gallery/1.jpg"  style="max-height: 300px; max-width: 400px;" class="img-rounded" />--}}
-                                       {{--<img src="assets/img/gallery/1.jpg"  style="max-height: 300px; max-width: 400px;" class="img-rounded" />--}}
-                                       <h4>{{$picture->description}}</h4>
+                               <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s" >
+                                   <div class="faculty-div" >
+                                       <a href="{{asset('assets/img/Gallery/'.$picture->url)}}" id="lightbox" title="{{$picture->description}}">
+                                        <img src="{{asset('assets/img/Gallery/'.$picture->url)}}" style="height: 300px;width: 300px;"  class="img-rounded" />
+                                       </a>
+                                       <h3 >{{$picture->description}}</h3>
                                    </div>
                                </div>
-                                @endforeach
-                           </div>
+                               @endforeach
+                                </div>
+
+
                        </div>
+
+
+
+                   </div>
+
+                       </div>
+                       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                           <span class="sr-only">Previous</span>
+                       </a>
+                       <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                           <span class="sr-only">Next</span>
+                       </a>
+                   </div>
+
+                   <!-- end image part-->
 
                    </div>
                </div>
            </div>
        </div>
+
        <!-- Gallery Section Starts-->
+       <div id="contact-sec"   >
+           <div class="overlay">
+               <div class="container set-pad">
+                   <div class="row text-center">
+                       <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" style="margin:0 auto">
+                           <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" >Papers</h1>
+                           <p data-scroll-reveal="enter from the bottom after 0.3s">
+
+                           </p>
+                       </div>
+
+                   </div>
+                   <!--/.HEADER LINE END-->
+                   <div class="row" style="display:flex;justify-content:center;align-items:center;">
+                       <table border="0">
+                           <tr><th style="text-align:center" width="500px">Standard</th><th style="text-align:center"  width="500px">Description</th><th style="text-align:center"  width="500px">Link</th></tr>
+                       @foreach($files as $file)
+                           <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s" >
+                               <div class="faculty-div" >
+                                   <tr><td align="center">{{$file->std}}</td><td align="center">{{$file->description}}</td><td align="center"><a href="{{ asset('assets/pdf/'.$file->url) }}" target="_blank">Link</a></td></tr>
+                               </div>
+                           </div>
+                       @endforeach
+                       </table>
+                   </div>
+
+
+               </div>
+
+
+
+           </div>
+
+       </div>
+       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="sr-only">Previous</span>
+       </a>
+       <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="sr-only">Next</span>
+       </a>
+       </div>
+
+       <!-- end image part-->
+
+       </div>
+       </div>
+       </div>
+       </div>
        <div class="container">
            <div class="row set-row-pad"  >
                <div style="margin:0 auto" class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
@@ -323,4 +450,9 @@
     {{--<script src="{{ asset('assets/js/jquery.easing.min.js') }}" defer></script>--}}
     <!--  Custom Scripts -->
     <script src="{{ asset('assets/js/custom.js') }}" defer></script>
+<script>
+    $("#lightbox").on("click", function() {
+        $(this).modal();
+    });
+</script>
 </html>

@@ -42,6 +42,10 @@ Route::get('/AddPictures', ['middleware' => 'auth', 'uses' => 'PictureCRUDContro
 //Route::get('/admin', 'AdminController@index')->name('admin');
 Route::get('/admin', ['middleware' => 'auth', 'uses' => 'AdminController@index'])->name('admin');
 
+Route::get('/AddAdmin', ['middleware' => 'auth', 'uses' => function () {
+    return view('auth.register' );
+} ])->name('reg');
+
 Route::resource('facultyCRUD','FacultyCRUDController');
 
 Route::resource('pictureCRUD','PictureCRUDController');
