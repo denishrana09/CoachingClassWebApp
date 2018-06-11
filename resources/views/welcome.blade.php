@@ -214,73 +214,56 @@
                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" style="margin:0 auto">
                        <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">OUR FACULTY </h1>
                        <p data-scroll-reveal="enter from the bottom after 0.3s">
-                           Description by Client
 
                        </p>
                    </div>
 
                </div>
                <!--/.HEADER LINE END-->
-               <div class="row" style="display:flex;justify-content:center;align-items:center;">
+               {{--<div class="row" style="display:flex;justify-content:center;align-items:center;">--}}
+                   {{--@foreach($faconind as $faculty)--}}
+                   {{--<div  class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">--}}
+
+                       {{--<div>--}}
+
+                           {{--<img style="float: left" src="{{asset('assets/img/faculty/'.$faculty->path)}}"/>--}}
+                            {{--<div style="float: right">--}}
+                               {{--<h3 >{{$faculty->fname}} {{$faculty->lname}}</h3>--}}
+                               {{--<hr />--}}
+                               {{--<h4>{{$faculty->qualification}} <br /> {{$faculty->Subject}}</h4>--}}
+                               {{--<p >--}}
+                                   {{--{{$faculty->description}}--}}
+                               {{--</p>--}}
+                            {{--</div>--}}
+
+                       {{--</div>--}}
+
+                   {{--</div>--}}
+                   {{--@endforeach--}}
+
+               {{--</div>--}}
+               <div class="row" style="display:flex;justify-content:center;align-items:center;" >
+
                    @foreach($faconind as $faculty)
-                   <div  class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
+                   <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
+                       <div class="faculty-div" style="align-items: center">
+                           <img src="{{asset('assets/img/faculty/'.$faculty->path)}}"  class="img-rounded" />
+                           <h3 >{{$faculty->fname}} {{$faculty->lname}} </h3>
+                           <hr />
+                           <h4>{{$faculty->qualification}} <br /> {{$faculty->Subject}}</h4>
+                           <p >
+                               {{$faculty->description}}
 
-                       <div>
-
-                           <img style="float: left" src="{{asset('assets/img/faculty/'.$faculty->path)}}"/>
-                            <div style="float: right">
-                               <h3 >{{$faculty->fname}} {{$faculty->lname}}</h3>
-                               <hr />
-                               <h4>{{$faculty->qualification}} <br /> {{$faculty->Subject}}</h4>
-                               <p >
-                                   {{$faculty->description}}
-                               </p>
-                            </div>
-
+                           </p>
                        </div>
-
                    </div>
                    @endforeach
-
                </div>
                <div style="display:flex;justify-content:center;align-items:center;">
 
-                       <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                       <a class="btn btn-primary"  href="{{route('vfac')}}" role="button" aria-expanded="false" >
                            Show All
                        </a>
-                   <div class="collapse" id="collapseExample"  >
-                       <div >
-                           <div class="row" style="display:flex;justify-content:center;align-items:center;">
-                               <table >
-                                   <tr>
-                                   <th>Name</th>
-                                       <th></th>
-                                       <th>Qualification</th>
-                                       <th></th>
-                                       <th>Subject</th>
-                                   </tr>
-                               @foreach($faculties as $faculty)
-                                   <div  class="col-lg-4  col-md-4 col-sm-4" >
-
-                                       <div>
-
-                                           <div style="float: right">
-                                        <tr><td><h3 >{{$faculty->fname}} {{$faculty->lname}}</h3></td><td></td>
-
-                                            <td><h4>{{$faculty->qualification}} <br /></h4></td><td></td><td><h4> {{$faculty->Subject}}</h4></td>
-
-                                           </div>
-
-                                       </div>
-
-                                   </div>
-                               @endforeach
-                               </table>
-
-                           </div>
-
-                       </div>
-                   </div>
                </div>
            </div>
        </div>
@@ -313,7 +296,7 @@
                                 {{--@endforeach--}}
                                 @foreach($pictures as $picture)
                                <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s" >
-                                   <div class="faculty-div" >
+                                   <div class="faculty-div"  >
                                        <a href="{{asset('assets/img/Gallery/'.$picture->url)}}" id="lightbox" title="{{$picture->description}}">
                                         <img src="{{asset('assets/img/Gallery/'.$picture->url)}}" style="height: 300px;width: 300px;"  class="img-rounded" />
                                        </a>
@@ -348,52 +331,6 @@
            </div>
        </div>
 
-       <!-- Gallery Section Starts-->
-       <div id="contact-sec"   >
-           <div class="overlay">
-               <div class="container set-pad">
-                   <div class="row text-center">
-                       <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" style="margin:0 auto">
-                           <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" >Papers</h1>
-                           <p data-scroll-reveal="enter from the bottom after 0.3s">
-
-                           </p>
-                       </div>
-
-                   </div>
-                   <!--/.HEADER LINE END-->
-                   <div class="row" style="display:flex;justify-content:center;align-items:center;">
-                       <table border="0">
-                           <tr><th style="text-align:center" width="500px">Standard</th><th style="text-align:center"  width="500px">Description</th><th style="text-align:center"  width="500px">Link</th></tr>
-                       @foreach($files as $file)
-                           <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s" >
-                               <div class="faculty-div" >
-                                   <tr><td align="center">{{$file->std}}</td><td align="center">{{$file->description}}</td><td align="center"><a href="{{ asset('assets/pdf/'.$file->url) }}" target="_blank">Link</a></td></tr>
-                               </div>
-                           </div>
-                       @endforeach
-                       </table>
-                   </div>
-
-
-               </div>
-
-
-
-           </div>
-
-       </div>
-       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-           <span class="sr-only">Previous</span>
-       </a>
-       <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-           <span class="sr-only">Next</span>
-       </a>
-       </div>
-
-       <!-- end image part-->
 
        </div>
        </div>

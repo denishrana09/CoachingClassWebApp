@@ -20,12 +20,24 @@ Auth::routes();
 
 Route::get('/home', 'HomePageController@index')->name('home');
 
+Route::get('/showfaculty', 'viewFacultyController@index')->name('vfac');
+
+Route::get('/DownloadPaper5', 'viewFilesController@showClass5')->name('PaperClass5');
+Route::get('/DownloadPaper6', 'viewFilesController@showClass6')->name('PaperClass6');
+Route::get('/DownloadPaper7', 'viewFilesController@showClass7')->name('PaperClass7');
+Route::get('/DownloadPaper8', 'viewFilesController@showClass8')->name('PaperClass8');
+Route::get('/DownloadPaper9', 'viewFilesController@showClass9')->name('PaperClass9');
+Route::get('/DownloadPaper10', 'viewFilesController@showClass10')->name('PaperClass10');
+Route::get('/DownloadPaper11', 'viewFilesController@showClass11')->name('PaperClass11');
+Route::get('/DownloadPaper12', 'viewFilesController@showClass12')->name('PaperClass12');
+
+
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 //Route::get('/faculty', 'FacultyCRUDController@index')->name('faculty');
 //Route::get('/AddFaculty', 'FacultyCRUDController@create')->name('faccreate');
 Route::get('/faculty', ['middleware' => 'auth', 'uses' => 'FacultyCRUDController@index'])->name('faculty');
-Route::get('/AddFaculty', ['middleware' => 'auth', 'uses' => 'FacultyCRUDController@index'])->name('faccreate');
+Route::get('/AddFaculty', ['middleware' => 'auth', 'uses' => 'FacultyCRUDController@create'])->name('faccreate');
 
 
 //Route::get('/Files', 'UserFilesController@index')->name('fileind');

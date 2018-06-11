@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Shree Vidhya Coaching Classes') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ config('app.name', 'Shree Vidhya Coaching Classes') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -41,6 +41,36 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    Papers <span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('PaperClass5') }}">
+                                        {{ __('Class 5th') }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('PaperClass5') }}">
+                                    {{ __('Class 6th') }}
+
+                                    <a class="dropdown-item" href="{{ route('PaperClass5') }}">
+                                    {{ __('Class 7th') }}
+                                    </a>
+
+                                    <a class="dropdown-item" href="{{ route('PaperClass5') }}">
+                                    {{ __('Class 8th') }}
+                                    </a>
+
+                                    <a class="dropdown-item" href="{{ route('PaperClass5') }}">
+                                    {{ __('Class 9th') }}
+                                    </a>
+
+                                    <a class="dropdown-item" href="{{ route('PaperClass5') }}">
+                                    {{ __('Class 10th') }}
+                                    </a>
+                                </div>
+                            </li>
+
                             <li><a class="nav-link" href="{{ route('admin') }}">{{ __('Admin Login') }}</a></li>
                         @else
                             <li class="nav-item dropdown">
@@ -66,9 +96,7 @@
             </div>
         </nav>
         @yield('contentforhome')
-        <main class="py-4">
-            @yield('content')
-        </main>
+
     </div>
 </body>
 </html>
