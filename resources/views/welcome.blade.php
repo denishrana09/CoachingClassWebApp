@@ -76,9 +76,7 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-            #faculty-sec {
-                background-image: url({{asset('assets/img/bgblue1.jpeg')}});
-            }
+
         </style>
     </head>
     @extends('layouts.app')
@@ -247,7 +245,7 @@
                    @foreach($faconind as $faculty)
                    <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
                        <div class="faculty-div" style="align-items: center">
-                           <img src="{{asset('assets/img/faculty/'.$faculty->path)}}"  class="img-rounded" />
+                           <img src="{{asset('assets/img/faculty/'.$faculty->path)}}" height="300px" width="350px"  class="img-rounded" />
                            <h3 >{{$faculty->fname}} {{$faculty->lname}} </h3>
                            <hr />
                            <h4>{{$faculty->qualification}} <br /> {{$faculty->Subject}}</h4>

@@ -50,23 +50,28 @@
                                     <a class="dropdown-item" href="{{ route('PaperClass5') }}">
                                         {{ __('Class 5th') }}
                                     </a>
-                                    <a class="dropdown-item" href="{{ route('PaperClass5') }}">
+                                    <a class="dropdown-item" href="{{ route('PaperClass6') }}">
                                     {{ __('Class 6th') }}
 
-                                    <a class="dropdown-item" href="{{ route('PaperClass5') }}">
+                                    <a class="dropdown-item" href="{{ route('PaperClass7') }}">
                                     {{ __('Class 7th') }}
                                     </a>
 
-                                    <a class="dropdown-item" href="{{ route('PaperClass5') }}">
+                                    <a class="dropdown-item" href="{{ route('PaperClass8') }}">
                                     {{ __('Class 8th') }}
                                     </a>
 
-                                    <a class="dropdown-item" href="{{ route('PaperClass5') }}">
+                                    <a class="dropdown-item" href="{{ route('PaperClass9') }}">
                                     {{ __('Class 9th') }}
                                     </a>
 
-                                    <a class="dropdown-item" href="{{ route('PaperClass5') }}">
+                                    <a class="dropdown-item" href="{{ route('PaperClass10') }}">
                                     {{ __('Class 10th') }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('PaperClass11') }}">
+                                    {{ __('Class 11th') }}
+                                    </a> <a class="dropdown-item" href="{{ route('PaperClass12') }}">
+                                    {{ __('Class 12th') }}
                                     </a>
                                 </div>
                             </li>
@@ -75,7 +80,43 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                    Papers <span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('PaperClass5') }}">
+                                        {{ __('Class 5th') }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('PaperClass6') }}">
+                                        {{ __('Class 6th') }}
+
+                                        <a class="dropdown-item" href="{{ route('PaperClass7') }}">
+                                            {{ __('Class 7th') }}
+                                        </a>
+
+                                        <a class="dropdown-item" href="{{ route('PaperClass8') }}">
+                                            {{ __('Class 8th') }}
+                                        </a>
+
+                                        <a class="dropdown-item" href="{{ route('PaperClass9') }}">
+                                            {{ __('Class 9th') }}
+                                        </a>
+
+                                        <a class="dropdown-item" href="{{ route('PaperClass10') }}">
+                                            {{ __('Class 10th') }}
+                                        </a>
+                                        <a class="dropdown-item" href="{{ route('PaperClass11') }}">
+                                            {{ __('Class 11th') }}
+                                        </a>
+                                        <a class="dropdown-item" href="{{ route('PaperClass12') }}">
+                                            {{ __('Class 12th') }}
+                                        </a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                        {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -95,6 +136,7 @@
                 </div>
             </div>
         </nav>
+        @yield('content')
         @yield('contentforhome')
 
     </div>
