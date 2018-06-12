@@ -9,12 +9,12 @@
     <link rel="stylesheet" type="text/css" href="assets/css/material-design.css">
     <link rel="stylesheet" type="text/css" href="assets/css/small-n-flat.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-    <title>Clearmin template</title>
+    <title>Admin Panel Shree Vidhya Coaching Classes</title>
 </head>
 <body class="cm-no-transition cm-1-navbar">
 <div id="cm-menu">
     <nav class="cm-navbar cm-navbar-primary">
-        <div class="cm-flex"><a href="index.html" class="cm-logo"></a></div>
+        <div class="cm-flex"><a href="{{route('home')}}" class="cm-logo "/> </a></div>
         <div class="btn btn-primary md-menu-white" data-toggle="cm-menu"></div>
     </nav>
     <div id="cm-menu-content">

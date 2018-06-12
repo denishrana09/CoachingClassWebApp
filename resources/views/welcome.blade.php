@@ -1,4 +1,5 @@
 <!doctype html>
+<link rel="stylesheet" href="{{asset('css/lightbox.css')}}" type="text/css" media="screen" />
 <link href="{{ asset('assets/css/font-awesome.min.css') }}" rel="stylesheet" />
 <link href="{{ asset('assets/css/flexslider.css') }}" rel="stylesheet" />
 <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" />
@@ -34,6 +35,40 @@
                 height: 100vh;
                 margin: 0;
             }
+
+
+            .modalDialog {
+                position: fixed;
+                font-family: Arial, Helvetica, sans-serif;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: rgba(0,0,0,0.8);
+                z-index: 99999;
+                opacity:0;
+                -webkit-transition: opacity 400ms ease-in;
+                -moz-transition: opacity 400ms ease-in;
+                transition: opacity 400ms ease-in;
+                pointer-events: none;
+            }
+            .modalDialog:target {
+                opacity:1;
+                pointer-events: auto;
+            }
+            .modalDialog > div {
+                width: 400px;
+                position: relative;
+                margin: 10% auto;
+                padding: 5px 20px 13px 20px;
+                border-radius: 10px;
+                background: #fff;
+                background: -moz-linear-gradient(#fff, #999);
+                background: -webkit-linear-gradient(#fff, #999);
+                background: -o-linear-gradient(#fff, #999);
+            }
+
+
 
             .full-height {
                 height: 100vh;
@@ -280,6 +315,7 @@
 
                    </div>
                    <!--/.HEADER LINE END-->
+
                    <div class="row" >
                    {{--@foreach($pictures as $picture)--}}
                                {{--<div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">--}}
@@ -296,7 +332,7 @@
                                 @foreach($pictures as $picture)
                                <div class="card text-white bg-secondary mb-3 col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s" >
                                    <div class="faculty-div"  >
-                                        <img class="card-img-top" src="{{asset('assets/img/Gallery/'.$picture->url)}}" style="height: 300px;width: 300px;"  class="img-rounded" />
+                                       <a href="{{asset('assets/img/Gallery/'.$picture->url)}} " rel="lightbox"> <img class="card-img-top"  src="{{asset('assets/img/Gallery/'.$picture->url)}}" style="height: 300px;width: 300px;"  class="img-rounded" /></a>
                                        <div class="card-body">
                                        <p class="card-text" >{{$picture->description}}</p>
                                    </div>
@@ -379,6 +415,7 @@
 
     </body>
     @endsection
+    <script type="text/javascript" src="{{asset('/js/lightbox.js')}}"></script>
 
     <!--  Jquery Core Script -->
     <script src="{{ asset('/assets/js/jquery-1.10.2.js') }}" defer></script>
@@ -392,8 +429,6 @@
     <!--  Custom Scripts -->
     <script src="{{ asset('assets/js/custom.js') }}" defer></script>
 <script>
-    $("#lightbox").on("click", function() {
-        $(this).modal();
-    });
+
 </script>
 </html>
