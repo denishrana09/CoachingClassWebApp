@@ -56,7 +56,10 @@
                     <!-- Authentication Links -->
                     @guest
                         <li><a class="nav-link" href="{{ route('home') }}">{{ __('back') }}</a></li>
-                        @endguest
+                        @else
+                        <li><a class="nav-link" href="{{ route('home') }}">{{ __('back') }}</a></li>
+
+                    @endguest
                 </ul>
             </div>
         </div>
@@ -67,15 +70,17 @@
 
     @foreach($faculties as $faculty)
 
-    <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
+    <div class="card border-secondary mb-3 col-lg-4  col-md-4 col-sm-4"  data-scroll-reveal="enter from the bottom after 0.4s">
         <div class="faculty-div">
-            <h3 >{{$faculty->fname}} {{$faculty->lname}} </h3>
+            <h3 class="card-header" >{{$faculty->fname}} {{$faculty->lname}} </h3>
             <hr />
+            <div class="card-body">
             <h4>{{$faculty->Subject}}<br /> {{$faculty->qualification}}</h4>
             <p >
                 {{$faculty->description}}
 
             </p>
+            </div>
         </div>
     </div>
         @endforeach

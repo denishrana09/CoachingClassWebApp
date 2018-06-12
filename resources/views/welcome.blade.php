@@ -257,7 +257,7 @@
                    </div>
                    @endforeach
                </div>
-               <div style="display:flex;justify-content:center;align-items:center;">
+               <div style="display:flex;justify-content:center;align-items:center;padding-bottom: 10px">
 
                        <a class="btn btn-primary"  href="{{route('vfac')}}" role="button" aria-expanded="false" >
                            Show All
@@ -292,16 +292,22 @@
                                    {{--</div>--}}
                                {{--</div>--}}
                                 {{--@endforeach--}}
+                       @if(count($pictures) > 0)
                                 @foreach($pictures as $picture)
-                               <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s" >
+                               <div class="card text-white bg-secondary mb-3 col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s" >
                                    <div class="faculty-div"  >
-                                       <a href="{{asset('assets/img/Gallery/'.$picture->url)}}" id="lightbox" title="{{$picture->description}}">
-                                        <img src="{{asset('assets/img/Gallery/'.$picture->url)}}" style="height: 300px;width: 300px;"  class="img-rounded" />
-                                       </a>
-                                       <h3 >{{$picture->description}}</h3>
+                                        <img class="card-img-top" src="{{asset('assets/img/Gallery/'.$picture->url)}}" style="height: 300px;width: 300px;"  class="img-rounded" />
+                                       <div class="card-body">
+                                       <p class="card-text" >{{$picture->description}}</p>
+                                   </div>
                                    </div>
                                </div>
                                @endforeach
+                           @else
+                           <div style="margin: 0 auto">
+                       <h2> NO PICTURES IN GALLERY</h2>
+                           </div>
+                           @endif
                                 </div>
 
 
