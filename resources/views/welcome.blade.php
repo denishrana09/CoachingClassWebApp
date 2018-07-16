@@ -128,41 +128,41 @@
                             <ul class="slides move-me">
                                 <!-- Slider 01 -->
                                 <li>
-                                    <h3>Delivering Quality Education</h3>
-                                    <h1>THE UNIQUE METHOD</h1>
-                                    <a  href="#features-sec" class="btn btn-info btn-lg" >
-                                        GET AWESOME
-                                    </a>
-                                    <a  href="#features-sec" class="btn btn-success btn-lg" >
-                                        FEATURE LIST
-                                    </a>
+                                    <h1 style="font-family:'Noto Sans Gujarati';">શ્રી વિદ્યા</h1>
+                                    <h1 style="font-family:'Noto Sans Gujarati';">કોચીંગ ક્લાસીસ</h1>
+                                    {{--<a  href="#features-sec" class="btn btn-info btn-lg" >--}}
+                                        {{--GET AWESOME--}}
+                                    {{--</a>--}}
+                                    {{--<a  href="#features-sec" class="btn btn-success btn-lg" >--}}
+                                        {{--FEATURE LIST--}}
+                                    {{--</a>--}}
                                 </li>
                                 <!-- End Slider 01 -->
 
                                 <!-- Slider 02 -->
                                 <li>
-                                    <h3>Delivering Quality Education</h3>
-                                    <h1>UNMATCHED APPROACH</h1>
-                                    <a  href="#features-sec" class="btn btn-primary btn-lg" >
-                                        GET AWESOME
-                                    </a>
-                                    <a  href="#features-sec" class="btn btn-danger btn-lg" >
-                                        FEATURE LIST
-                                    </a>
+                                    <h1 style="font-family:'Noto Sans Gujarati';">શ્રી વિદ્યા</h1>
+                                    <h1 style="font-family:'Noto Sans Gujarati';">એજ્યુકેશન</h1>
+                                    {{--<a  href="#features-sec" class="btn btn-primary btn-lg" >--}}
+                                        {{--GET AWESOME--}}
+                                    {{--</a>--}}
+                                    {{--<a  href="#features-sec" class="btn btn-danger btn-lg" >--}}
+                                        {{--FEATURE LIST--}}
+                                    {{--</a>--}}
                                 </li>
                                 <!-- End Slider 02 -->
 
                                 <!-- Slider 03 -->
-                                <li>
-                                    <h3>Delivering Quality Education</h3>
-                                    <h1>AWESOME FACULTY PANEL</h1>
-                                    <a  href="#features-sec" style="background-color: white" class="btn btn-lg" >
-                                        GET AWESOME
-                                    </a>
-                                    <a  href="#features-sec" class="btn btn-info btn-lg" >
-                                        FEATURE LIST
-                                    </a>
-                                </li>
+                                {{--<li>--}}
+                                    {{--<h3 style="font-family:'Noto Sans Gujarati';">શ્રી વિદ્યા</h3>--}}
+                                    {{--<h1>AWESOME FACULTY PANEL</h1>--}}
+                                    {{--<a  href="#features-sec" style="background-color: white" class="btn btn-lg" >--}}
+                                        {{--GET AWESOME--}}
+                                    {{--</a>--}}
+                                    {{--<a  href="#features-sec" class="btn btn-info btn-lg" >--}}
+                                        {{--FEATURE LIST--}}
+                                    {{--</a>--}}
+                                {{--</li>--}}
                                 <!-- End Slider 03 -->
                             </ul>
                         </div>
@@ -180,7 +180,8 @@
 
                    <div style="padding-top: 1mm" class="col-lg-12  col-md-12 col-sm-12">
 
-                       <h2 data-scroll-reveal="enter from the bottom after 0.5s" ><i class="fa fa-circle-o-notch"></i> WELCOME TO THE SHREE VIDHYA COACHING CLASSES <i class="fa fa-circle-o-notch"></i> </h2>
+                           <marquee behavior="SCROLL" direction="left"><h2 style="font-family:'Noto Sans Gujarati';" data-scroll-reveal="enter from the bottom after 0.5s" ><i class="fa fa-circle-o-notch"></i>
+                           ધો. ૧ થી ટી.વાય.બી.કોમ​. સુધીના વર્ગો <i class="fa fa-circle-o-notch"></i> </h2></marquee>
                    </div>
                </div>
            </div>
@@ -191,7 +192,9 @@
            <div class="row text-center">
 
                <div  style="margin:0 auto" class="col-lg-8  col-lg-offset-4 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-                   <h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line">FEATURE LIST </h1>
+                   <h1  style="font-family:'Noto Sans Gujarati';" data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line">
+                       અમારી વિશેષતાઓ
+                   </h1>
                </div>
 
 
@@ -200,10 +203,15 @@
            <div class="row" >
 
 
-               <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
+               <div class="col-lg-6  col-md-6 col-sm-6" data-scroll-reveal="enter from the bottom after 0.4s">
                    <div class="about-div">
-                       <i class="fa fa-paper-plane-o fa-4x icon-round-border" ></i>
-                       <h3 >Quality <br /> Education</h3>
+                       {{--<i class="fa fa-paper-plane-o fa-4x icon-round-border" ></i>--}}
+                       <h5 style="font-family:'Noto Sans Gujarati';">
+                           દરેક પ્રેક્ટીકલ વિશયમા સતત પ્રેક્ટિસ આયોજ્નબધ્ધ મહેનત<br />
+                           અઠવાડિક પરિક્ષાનું આયોજન​<br/>
+                           દરેક વિશયનું સંપૂર્ણ રીવીઝન નિષ્ણાંત અને અનુભ​વી શિક્ષકગણ<br/>
+                           <br/>
+                           <br/></h5>
                        <hr />
                        <hr />
                        <p >
@@ -212,9 +220,9 @@
                        <a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>
                    </div>
                </div>
-               <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
+               <div class="col-lg-6  col-md-6 col-sm-6" data-scroll-reveal="enter from the bottom after 0.5s">
                    <div class="about-div">
-                       <i class="fa fa-bolt fa-4x icon-round-border" ></i>
+                       {{--<i class="fa fa-bolt fa-4x icon-round-border" ></i>--}}
                        <h3 >SYSTEMATIC APPROACH</h3>
                        <hr />
                        <hr />
@@ -224,18 +232,18 @@
                        <a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>
                    </div>
                </div>
-               <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
-                   <div class="about-div">
-                       <i class="fa fa-magic fa-4x icon-round-border" ></i>
-                       <h3 >ONE TO <br />ONE STUDY</h3>
-                       <hr />
-                       <hr />
-                       <p >
-                           Description by Client
-                       </p>
-                       <a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>
-                   </div>
-               </div>
+               {{--<div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">--}}
+                   {{--<div class="about-div">--}}
+                       {{--<i class="fa fa-magic fa-4x icon-round-border" ></i>--}}
+                       {{--<h3 >ONE TO <br />ONE STUDY</h3>--}}
+                       {{--<hr />--}}
+                       {{--<hr />--}}
+                       {{--<p >--}}
+                           {{--Description by Client--}}
+                       {{--</p>--}}
+                       {{--<a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>--}}
+                   {{--</div>--}}
+               {{--</div>--}}
 
 
            </div>
