@@ -123,13 +123,20 @@
                 <div class="row text-center " >
 
                     <div class="col-lg-12  col-md-12 col-sm-12">
-
+                        <div>
+                            <h1 style="font-family:'Noto Sans Gujarati';color: white">
+                                ॥ શ્રી સરસ્વતૈય નમ​:॥</h1>
+                            <h5 style="color: white";>
+                                "Knowledge is the best wealth which can not be stolen by anyone"
+                            </h5>
+                        </div>
                         <div class="flexslider set-flexi" id="main-section" >
                             <ul class="slides move-me">
                                 <!-- Slider 01 -->
                                 <li>
-                                    <h1 style="font-family:'Noto Sans Gujarati';">શ્રી વિદ્યા</h1>
-                                    <h1 style="font-family:'Noto Sans Gujarati';">કોચીંગ ક્લાસીસ</h1>
+                                    <h1 style="font-family:'Noto Sans Gujarati';font-size: 100px;color: #E32E2E;-webkit-text-stroke-width:2px;-webkit-text-stroke-color: white;">
+                                        શ્રી વિદ્યા</h1>
+                                    <h1 style="font-family:'Noto Sans Gujarati';font-size: 40px;">કોચીંગ ક્લાસીસ</h1>
                                     {{--<a  href="#features-sec" class="btn btn-info btn-lg" >--}}
                                         {{--GET AWESOME--}}
                                     {{--</a>--}}
@@ -141,8 +148,9 @@
 
                                 <!-- Slider 02 -->
                                 <li>
-                                    <h1 style="font-family:'Noto Sans Gujarati';">શ્રી વિદ્યા</h1>
-                                    <h1 style="font-family:'Noto Sans Gujarati';">એજ્યુકેશન</h1>
+                                    <h1 style="font-family:'Noto Sans Gujarati';font-size: 100px;color: #E32E2E;-webkit-text-stroke-width:2px;-webkit-text-stroke-color: white;">
+                                        શ્રી વિદ્યા</h1>
+                                    <h1 style="font-family:'Noto Sans Gujarati';font-size: 40px;">એજ્યુકેશન</h1>
                                     {{--<a  href="#features-sec" class="btn btn-primary btn-lg" >--}}
                                         {{--GET AWESOME--}}
                                     {{--</a>--}}
@@ -210,8 +218,32 @@
                            દરેક પ્રેક્ટીકલ વિશયમા સતત પ્રેક્ટિસ આયોજ્નબધ્ધ મહેનત<br />
                            અઠવાડિક પરિક્ષાનું આયોજન​<br/>
                            દરેક વિશયનું સંપૂર્ણ રીવીઝન નિષ્ણાંત અને અનુભ​વી શિક્ષકગણ<br/>
+                           સાંસ્ક્રુતિક અને મનોરંજન કાર્યક્રમનુ આયોજન​<br/>
+                           SMS પધ્ધતિ દ્વારા હાજરીની નોંધ​<br/>
+                           બોર્ડની પેપર સ્ટાઇલ મુજબ જ્વાબ લખ​વાની સમજણ<br/>
+                           નબળા વિધ્યાર્થીઓ પર વ્યક્તિગત ધ્યાન​<br/>
+                           પૂરતી હ​વા-ઉજાસની સગ​વડ<br/>
+                           પ્રોજેક્ટર પર વિષય વસ્તુની સમજૂતી<br/>
+                           CCTV કેમેરા દ્વારા દરેક વર્ગ સજ્જ​<br/>
+                           <br/><br/>
+                           એક બાળકને શ્રેષ્થ વિધ્યાર્થી બનાવ​વા માટે વાલીમિત્રો આટલુ અવશ્ય કરો
+
+                           આપના બાળકનું ગૃહકાર્ય રોજ કરાવો.<br/>
+                           હાજરી અને પ્રગતિની જાણ માટે મહિનામાં એકાદવાર સંચાલકશ્રીને અચૂક રુબરુ મળો.<br/>
+                           આપના બાળકને આપના સથ​વારાની જરુર છે.<br/>
+                           આપના બાળકની જીગ્યાશાવ્રુતિ પ્રબળ બનાવ​વા સધન પ્રયત્ન કરો.<br/>
+                           વિધ્યાર્થી કે વાલીને અસંતોષ કે મુંઝ​વણ હોય તો તેમને વિના સંકોચે સંચાલકશ્રીને રુબરુ મળવું
+                           જે અંગે સ્ટાફ જોડે રક્ઝક કર​વી નહિ.<br/>
                            <br/>
-                           <br/></h5>
+
+                           <br/><br/>
+                           અનુભવી અને નિષ્ણાંત શિક્ષકોની ટીમ<br>
+                           ઊમેશ સર​ - M.Com.br,અનિલ સર​ - M.Com.<br>
+                           યોગેશ સર - B.C.A.,અઝહર સર - B.Sc.,અશોક સર - B.C.A.,<br>
+                           હીના ટીચર B.Com.,મયુરી ટીચર - B.Com.,પ્રિયંક સર - B.Com.Eng.<br>
+                           અંકિત સર - B.E.I.T.,અક્શય સર - B.Com.,પિયુષ સર - B.Com.<br>
+                           <br/>
+                       </h5>
                        <hr />
                        <hr />
                        <p >
@@ -404,9 +436,9 @@
                <h2 ><strong>Social Conectivity </strong></h2>
                <hr />
                <div >
-                   <a href="#">  <img src="assets/img/Social/facebook.png" alt="" /> </a>
-                   <a href="#"> <img src="assets/img/Social/google-plus.png" alt="" /></a>
-                   <a href="#"> <img src="assets/img/Social/twitter.png" alt="" /></a>
+                   <a href="#">  <img src="assets/img/Social/facebook.png" alt="facebook logo" /> </a>
+                   <a href="#"> <img src="assets/img/Social/google-plus.png" alt="google-plus logo" /></a>
+                   <a href="#"> <img src="assets/img/Social/whatsapp.png" alt="whatsapp logo" /></a>
                </div>
            </div>
 

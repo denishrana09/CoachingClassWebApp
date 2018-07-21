@@ -21,8 +21,8 @@ class Faculties extends Migration
             $table->string('qualification');
             $table->string('Subject');
             $table->string('description')->nullable();
+//            $table->boolean('onIndex')->default('1');
             $table->boolean('onIndex');
-
             $table->timestamps();
         });
     }
