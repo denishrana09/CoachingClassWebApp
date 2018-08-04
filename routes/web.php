@@ -21,6 +21,7 @@ Auth::routes();
 Route::get('/home', 'HomePageController@index')->name('home');
 
 Route::get('/showfaculty', 'viewFacultyController@index')->name('vfac');
+Route::get('/showGallery', 'viewGalleryController@index')->name('vpic');
 
 Route::get('/DownloadPaper5', 'viewFilesController@showClass5')->name('PaperClass5');
 Route::get('/DownloadPaper6', 'viewFilesController@showClass6')->name('PaperClass6');

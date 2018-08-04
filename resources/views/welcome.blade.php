@@ -366,29 +366,29 @@
                </div>
                <div style="display:flex;justify-content:center;align-items:center;padding-bottom: 10px">
 
-                       <a class="btn btn-primary"  href="{{route('vfac')}}" role="button" aria-expanded="false" >
-                           Show All
+                       <a class="btn btn-primary"  href="{{route('vpic')}}" role="button" aria-expanded="false" >
+                           Show Pictures
                        </a>
                </div>
            </div>
        </div>
        <!-- FACULTY SECTION END-->
        <!-- Gallery Section starts -->
-       <div id="contact-sec"   >
-           <div class="overlay">
-               <div class="container set-pad">
-                   <div class="row text-center">
-                       <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" style="margin:0 auto">
-                           <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" >Gallery</h1>
-                           <p data-scroll-reveal="enter from the bottom after 0.3s">
+       {{--<div id="contact-sec"   >--}}
+           {{--<div class="overlay">--}}
+               {{--<div class="container set-pad">--}}
+                   {{--<div class="row text-center">--}}
+                       {{--<div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" style="margin:0 auto">--}}
+                           {{--<h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" >Gallery</h1>--}}
+                           {{--<p data-scroll-reveal="enter from the bottom after 0.3s">--}}
 
-                           </p>
-                       </div>
+                           {{--</p>--}}
+                       {{--</div>--}}
 
-                   </div>
-                   <!--/.HEADER LINE END-->
+                   {{--</div>--}}
+                   {{--<!--/.HEADER LINE END-->--}}
 
-                   <div class="row" >
+                   {{--<div class="row" >--}}
                    {{--@foreach($pictures as $picture)--}}
                                {{--<div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">--}}
                                    {{--<div class="faculty-div" >--}}
@@ -400,54 +400,54 @@
                                    {{--</div>--}}
                                {{--</div>--}}
                                 {{--@endforeach--}}
-                       @if(count($pictures) > 0)
-                                @foreach($pictures as $picture)
-                               <div class="card text-white bg-secondary mb-3 col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s" >
-                                   <div class="faculty-div"  >
-                                       <a href="{{asset('assets/img/Gallery/'.$picture->url)}} " rel="lightbox"> <img class="card-img-top"  src="{{asset('assets/img/Gallery/'.$picture->url)}}" style="height: 300px;width: 300px;"  class="img-rounded" /></a>
-                                       <div class="card-body">
-                                       <p class="card-text" >{{$picture->description}}</p>
-                                   </div>
-                                   </div>
-                               </div>
-                               @endforeach
-                           @else
-                           <div style="margin: 0 auto">
-                       <h2> NO PICTURES IN GALLERY</h2>
-                           </div>
-                           @endif
-                                </div>
+                       {{--@if(count($pictures) > 0)--}}
+                                {{--@foreach($pictures as $picture)--}}
+                               {{--<div class="card text-white bg-secondary mb-3 col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s" >--}}
+                                   {{--<div class="faculty-div"  >--}}
+                                       {{--<a href="{{asset('assets/img/Gallery/'.$picture->url)}} " rel="lightbox"> <img class="card-img-top"  src="{{asset('assets/img/Gallery/'.$picture->url)}}" style="height: 300px;width: 300px;"  class="img-rounded" /></a>--}}
+                                       {{--<div class="card-body">--}}
+                                       {{--<p class="card-text" >{{$picture->description}}</p>--}}
+                                   {{--</div>--}}
+                                   {{--</div>--}}
+                               {{--</div>--}}
+                               {{--@endforeach--}}
+                           {{--@else--}}
+                           {{--<div style="margin: 0 auto">--}}
+                       {{--<h2> NO PICTURES IN GALLERY</h2>--}}
+                           {{--</div>--}}
+                           {{--@endif--}}
+                                {{--</div>--}}
 
 
-                       </div>
+                       {{--</div>--}}
 
 
 
-                   </div>
+                   {{--</div>--}}
 
-                       </div>
-                       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                           <span class="sr-only">Previous</span>
-                       </a>
-                       <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                           <span class="sr-only">Next</span>
-                       </a>
-                   </div>
+                       {{--</div>--}}
+                       {{--<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">--}}
+                           {{--<span class="carousel-control-prev-icon" aria-hidden="true"></span>--}}
+                           {{--<span class="sr-only">Previous</span>--}}
+                       {{--</a>--}}
+                       {{--<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">--}}
+                           {{--<span class="carousel-control-next-icon" aria-hidden="true"></span>--}}
+                           {{--<span class="sr-only">Next</span>--}}
+                       {{--</a>--}}
+                   {{--</div>--}}
 
-                   <!-- end image part-->
+                   {{--<!-- end image part-->--}}
 
-                   </div>
-               </div>
-           </div>
-       </div>
+                   {{--</div>--}}
+               {{--</div>--}}
+           {{--</div>--}}
+       {{--</div>--}}
 
 
-       </div>
-       </div>
-       </div>
-       </div>
+       {{--</div>--}}
+       {{--</div>--}}
+       {{--</div>--}}
+       {{--</div>--}}
        <div class="container">
            <div class="row set-row-pad"  >
                <div style="margin:0 auto" class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
