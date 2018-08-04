@@ -353,6 +353,7 @@
                                                </a> <a class="dropdown-item" href="{{ route('PaperClass12') }}">
                                                    {{ __('Class 12th') }}
                                                </a>
+                                           </a>
                                        </div>
                                    </li>
                                </td>
