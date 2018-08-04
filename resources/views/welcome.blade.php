@@ -112,6 +112,7 @@
                 margin-bottom: 30px;
             }
 
+
         </style>
     </head>
     @extends('layouts.app')
@@ -208,76 +209,64 @@
 
            </div>
            <!--/.HEADER LINE END-->
-           <div class="row" >
+           <div class="row" style="padding-left:65px">
 
 
                <div class="col-lg-6  col-md-6 col-sm-6" data-scroll-reveal="enter from the bottom after 0.4s">
-                   <div class="about-div">
+                   <div >
                        {{--<i class="fa fa-paper-plane-o fa-4x icon-round-border" ></i>--}}
                        <h5 style="font-family:'Noto Sans Gujarati';">
-                           દરેક પ્રેક્ટીકલ વિશયમા સતત પ્રેક્ટિસ આયોજ્નબધ્ધ મહેનત<br />
-                           અઠવાડિક પરિક્ષાનું આયોજન​<br/>
-                           દરેક વિશયનું સંપૂર્ણ રીવીઝન નિષ્ણાંત અને અનુભ​વી શિક્ષકગણ<br/>
-                           સાંસ્ક્રુતિક અને મનોરંજન કાર્યક્રમનુ આયોજન​<br/>
-                           SMS પધ્ધતિ દ્વારા હાજરીની નોંધ​<br/>
-                           બોર્ડની પેપર સ્ટાઇલ મુજબ જ્વાબ લખ​વાની સમજણ<br/>
-                           નબળા વિધ્યાર્થીઓ પર વ્યક્તિગત ધ્યાન​<br/>
-                           પૂરતી હ​વા-ઉજાસની સગ​વડ<br/>
-                           પ્રોજેક્ટર પર વિષય વસ્તુની સમજૂતી<br/>
-                           CCTV કેમેરા દ્વારા દરેક વર્ગ સજ્જ​<br/>
-                           <br/><br/>
-                           એક બાળકને શ્રેષ્થ વિધ્યાર્થી બનાવ​વા માટે વાલીમિત્રો આટલુ અવશ્ય કરો
-
-                           આપના બાળકનું ગૃહકાર્ય રોજ કરાવો.<br/>
-                           હાજરી અને પ્રગતિની જાણ માટે મહિનામાં એકાદવાર સંચાલકશ્રીને અચૂક રુબરુ મળો.<br/>
-                           આપના બાળકને આપના સથ​વારાની જરુર છે.<br/>
-                           આપના બાળકની જીગ્યાશાવ્રુતિ પ્રબળ બનાવ​વા સધન પ્રયત્ન કરો.<br/>
-                           વિધ્યાર્થી કે વાલીને અસંતોષ કે મુંઝ​વણ હોય તો તેમને વિના સંકોચે સંચાલકશ્રીને રુબરુ મળવું
-                           જે અંગે સ્ટાફ જોડે રક્ઝક કર​વી નહિ.<br/>
-                           <br/>
-
-                           <br/><br/>
-                           અનુભવી અને નિષ્ણાંત શિક્ષકોની ટીમ<br>
-                           ઊમેશ સર​ - M.Com.br,અનિલ સર​ - M.Com.<br>
-                           યોગેશ સર - B.C.A.,અઝહર સર - B.Sc.,અશોક સર - B.C.A.,<br>
-                           હીના ટીચર B.Com.,મયુરી ટીચર - B.Com.,પ્રિયંક સર - B.Com.Eng.<br>
-                           અંકિત સર - B.E.I.T.,અક્શય સર - B.Com.,પિયુષ સર - B.Com.<br>
-                           <br/>
+                           <table border="0" width="1000" style="text-align: center;">
+                               <ul>
+                               <tr>
+                                   <td style="height:50px"><li>દરેક પ્રેક્ટીકલ વિશયમા સતત પ્રેક્ટિસ આયોજ્નબધ્ધ મહેનત</li></td><td width="50"></td>
+                                   <td style="height:50px"><li>એક બાળકને શ્રેષ્થ વિધ્યાર્થી બનાવ​વા માટે વાલીમિત્રો આટલુ અવશ્ય કરો આપના બાળકનું ગૃહકાર્ય રોજ કરાવો.</li></td><td width="50"></td>
+                                   <td style="height:50px"><li>અનુભવી અને નિષ્ણાંત શિક્ષકોની ટીમ.</li></td>
+                               </tr><tr></tr>
+                               <tr>
+                                   <td style="height:50px"><li>અઠવાડિક પરિક્ષાનું આયોજન.</li>​</td><td width="50"></td>
+                                   <td style="height:50px"><li>હાજરી અને પ્રગતિની જાણ માટે મહિનામાં એકાદવાર સંચાલકશ્રીને અચૂક રુબરુ મળો.</li></td><td width="50"></td>
+                                   <td style="height:50px"><li>ઊમેશ સર​ - M.Com.br,અનિલ સર​ - M.Com.</li></td>
+                               </tr><tr></tr>
+                               <tr>
+                                   <td style="height:50px"><li>દરેક વિશયનું સંપૂર્ણ રીવીઝન નિષ્ણાંત અને અનુભ​વી શિક્ષકગણ</li></td><td width="50"></td>
+                                   <td style="height:50px"><li>આપના બાળકને આપના સથ​વારાની જરુર છે.</li></td><td width="50"></td>
+                                   <td style="height:50px"><li>યોગેશ સર - B.C.A.,અઝહર સર - B.Sc.,અશોક સર - B.C.A.</li></td>
+                               </tr><tr></tr>
+                               <tr>
+                                   <td style="height:50px"><li>સાંસ્ક્રુતિક અને મનોરંજન કાર્યક્રમનુ આયોજન</li></td><td width="50"></td>
+                                   <td style="height:50px"><li>આપના બાળકની જીગ્યાશાવ્રુતિ પ્રબળ બનાવ​વા સધન પ્રયત્ન કરો.</li></td><td width="50"></td>
+                                   <td style="height:50px"><li>હીના ટીચર B.Com.,મયુરી ટીચર - B.Com.,પ્રિયંક સર - B.Com.Eng.</li></td>
+                               </tr><tr></tr>
+                               <tr>
+                                   <td style="height:50px"><li>SMS પધ્ધતિ દ્વારા હાજરીની નોંધ​</li></td><td width="50"></td>
+                                   <td style="height:50px"><li>વિધ્યાર્થી કે વાલીને અસંતોષ કે મુંઝ​વણ હોય તો તેમને વિના સંકોચે સંચાલકશ્રીને રુબરુ મળવું જે અંગે સ્ટાફ જોડે રક્ઝક કર​વી નહિ.</li></td><td width="50"></td>
+                                   <td style="height:50px"><li>અંકિત સર - B.E.I.T.,અક્શય સર - B.Com.,પિયુષ સર - B.Com.</li></td>
+                               </tr><tr></tr>
+                               <tr>
+                                   <td style="height:50px"><li>બોર્ડની પેપર સ્ટાઇલ મુજબ જ્વાબ લખ​વાની સમજણ</li></td>
+                               </tr><tr></tr>
+                               <tr>
+                                   <td style="height:50px"><li>નબળા વિધ્યાર્થીઓ પર વ્યક્તિગત ધ્યાન</li></td>
+                               </tr><tr></tr>
+                               <tr>
+                                   <td style="height:50px"><li>પૂરતી હ​વા-ઉજાસની સગ​વડ</li></td>
+                               </tr><tr></tr>
+                               <tr>
+                                   <td style="height:50px"><li>પ્રોજેક્ટર પર વિષય વસ્તુની સમજૂતી</li></td>
+                               </tr><tr></tr>
+                               <tr>
+                                   <td style="height:50px"><li>CCTV કેમેરા દ્વારા દરેક વર્ગ સજ્જ</li></td>
+                               </tr><tr></tr>
+                               </ul>
+                           </table>
+                       </h5>
                        </h5>
                        <hr />
                        <hr />
-                       <p >
-                          Description by Client
-                       </p>
-                       <a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>
                    </div>
                </div>
-               <div class="col-lg-6  col-md-6 col-sm-6" data-scroll-reveal="enter from the bottom after 0.5s">
-                   <div class="about-div">
-                       {{--<i class="fa fa-bolt fa-4x icon-round-border" ></i>--}}
-                       <h3 >SYSTEMATIC APPROACH</h3>
-                       <hr />
-                       <hr />
-                       <p >
-                           Description by Client
-                       </p>
-                       <a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>
-                   </div>
-               </div>
-               {{--<div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">--}}
-                   {{--<div class="about-div">--}}
-                       {{--<i class="fa fa-magic fa-4x icon-round-border" ></i>--}}
-                       {{--<h3 >ONE TO <br />ONE STUDY</h3>--}}
-                       {{--<hr />--}}
-                       {{--<hr />--}}
-                       {{--<p >--}}
-                           {{--Description by Client--}}
-                       {{--</p>--}}
-                       {{--<a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>--}}
-                   {{--</div>--}}
-               {{--</div>--}}
-
-
+           </div>
            </div>
        </div>
        <!-- FEATURES SECTION END-->
@@ -316,21 +305,63 @@
 
                {{--</div>--}}
                <div class="row" style="display:flex;justify-content:center;align-items:center;" >
+                   <div  data-scroll-reveal="enter from the bottom after 0.4s">
+                       {{--<div class="faculty-div" style="align-items: center;width: 33.34%">--}}
+                           {{--<img src="{{asset('assets/img/faculty/1.jpg')}}" height="300px" width="350px"  class="img-rounded" />--}}
+                       {{--</div>--}}
+                       <table border="0" >
+                           <tr>
+                               <td style="height: 500px" width="250px">
+                                    <h2> Name </h2>
+                                   <h3> Designation </h3>
+                                   <h3> Contact </h3>
+                                   <h3> E-mail </h3>
+                               </td>
+                               <td width="500px">
+                                   <img src="{{asset('assets/img/faculty/1.jpg')}}" height="100%" width="100%"  class="img-rounded" />
+                               </td>
+                               <td width="250px" style="justify-content:center;align-items:center;padding-left: 10%">
+                                   <li class="nav-item dropdown">
+                                       <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                           Our Quality Papers <span class="caret"></span>
+                                       </a>
 
-                   @foreach($faconind as $faculty)
-                   <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
-                       <div class="faculty-div" style="align-items: center">
-                           <img src="{{asset('assets/img/faculty/'.$faculty->path)}}" height="300px" width="350px"  class="img-rounded" />
-                           <h3 >{{$faculty->fname}} {{$faculty->lname}} </h3>
-                           <hr />
-                           <h4>{{$faculty->qualification}} <br /> {{$faculty->Subject}}</h4>
-                           <p >
-                               {{$faculty->description}}
+                                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                           <a class="dropdown-item" href="{{ route('PaperClass5') }}">
+                                               {{ __('Class 5th') }}
+                                           </a>
+                                           <a class="dropdown-item" href="{{ route('PaperClass6') }}">
+                                               {{ __('Class 6th') }}
 
-                           </p>
-                       </div>
-                   </div>
-                   @endforeach
+                                               <a class="dropdown-item" href="{{ route('PaperClass7') }}">
+                                                   {{ __('Class 7th') }}
+                                               </a>
+
+                                               <a class="dropdown-item" href="{{ route('PaperClass8') }}">
+                                                   {{ __('Class 8th') }}
+                                               </a>
+
+                                               <a class="dropdown-item" href="{{ route('PaperClass9') }}">
+                                                   {{ __('Class 9th') }}
+                                               </a>
+
+                                               <a class="dropdown-item" href="{{ route('PaperClass10') }}">
+                                                   {{ __('Class 10th') }}
+                                               </a>
+                                               <a class="dropdown-item" href="{{ route('PaperClass11') }}">
+                                                   {{ __('Class 11th') }}
+                                               </a> <a class="dropdown-item" href="{{ route('PaperClass12') }}">
+                                                   {{ __('Class 12th') }}
+                                               </a>
+                                       </div>
+                                   </li>
+                               </td>
+                           </tr>
+                       </table>
+
+               </div>
+
+
                </div>
                <div style="display:flex;justify-content:center;align-items:center;padding-bottom: 10px">
 
