@@ -1,6 +1,5 @@
 <!doctype html>
 <link rel="stylesheet" href="{{asset('css/lightbox.css')}}" type="text/css" media="screen" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link href="{{ asset('assets/css/font-awesome.min.css') }}" rel="stylesheet" />
 <link href="{{ asset('assets/css/flexslider.css') }}" rel="stylesheet" />
 <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" />
@@ -124,11 +123,13 @@
 
                     <div class="col-lg-12  col-md-12 col-sm-12">
                         <div>
-                            <h1 style="font-family:'Noto Sans Gujarati';color: white">
-                                ॥ શ્રી સરસ્વતૈય નમ​:॥</h1>
+                            <br />
                             <h5 style="color: white";>
                                 "Knowledge is the best wealth which can not be stolen by anyone"
                             </h5>
+                            <br />
+                            <h1 style="font-family:'Noto Sans Gujarati';color: white">
+                                ॥ શ્રી સરસ્વતૈય નમ​:॥</h1>
                         </div>
                         <div class="flexslider set-flexi" id="main-section" style="background-image: url('{{ asset('assets/img/vidhyaClassesLogo.jpg') }}');background-repeat: no-repeat;">
                             <ul class="slides move-me">
@@ -215,33 +216,36 @@
                    <div >
                        {{--<i class="fa fa-paper-plane-o fa-4x icon-round-border" ></i>--}}
                        <h5 style="font-family:'Noto Sans Gujarati';">
-                           <table border="0" width="1000" style="text-align: center;">
+                           <table border="0" width="1000" >
                                <ul>
                                <tr>
+                                   <td width="100px"></td>
                                    <td style="height:50px"><li>દરેક પ્રેક્ટીકલ વિશયમા સતત પ્રેક્ટિસ આયોજ્નબધ્ધ મહેનત</li></td><td width="50"></td>
                                    <td style="height:50px"><li>બોર્ડની પેપર સ્ટાઇલ મુજબ જ્વાબ લખ​વાની સમજણ</li></td>
                                    {{--<td style="height:50px"><li>એક બાળકને શ્રેષ્થ વિધ્યાર્થી બનાવ​વા માટે વાલીમિત્રો આટલુ અવશ્ય કરો આપના બાળકનું ગૃહકાર્ય રોજ કરાવો.</li></td>--}}
 
                                </tr><tr></tr>
-                               <tr>
-                                   <td style="height:50px"><li>અઠવાડિક પરિક્ષાનું આયોજન.</li>​</td><td width="50"></td>
+                               <tr><td width="100px"></td>
+                                    <td style="height: 50px;"><li>અઠવાડિક પરિક્ષાનું આયોજન.</li></td>
+                                    <td width="50"></td>
                                    <td style="height:50px"><li>નબળા વિધ્યાર્થીઓ પર વ્યક્તિગત ધ્યાન</li></td>
                                    {{--<td style="height:50px"><li>હાજરી અને પ્રગતિની જાણ માટે મહિનામાં એકાદવાર સંચાલકશ્રીને અચૂક રુબરુ મળો.</li></td><td width="50"></td>--}}
 
+
                                </tr><tr></tr>
-                               <tr>
+                               <tr><td width="100px"></td>
                                    <td style="height:50px"><li>દરેક વિશયનું સંપૂર્ણ રીવીઝન નિષ્ણાંત અને અનુભ​વી શિક્ષકગણ</li></td><td width="50"></td>
                                    <td style="height:50px"><li>પૂરતી હ​વા-ઉજાસની સગ​વડ</li></td>
                                    {{--<td style="height:50px"><li>આપના બાળકને આપના સથ​વારાની જરુર છે.</li></td>--}}
 
                                </tr><tr></tr>
-                               <tr>
+                               <tr><td width="100px"></td>
                                    <td style="height:50px"><li>સાંસ્ક્રુતિક અને મનોરંજન કાર્યક્રમનુ આયોજન</li></td><td width="50"></td>
                                    <td style="height:50px"><li>પ્રોજેક્ટર પર વિષય વસ્તુની સમજૂતી</li></td>
                                    {{--<td style="height:50px"><li>આપના બાળકની જીગ્યાશાવ્રુતિ પ્રબળ બનાવ​વા સધન પ્રયત્ન કરો.</li></td>--}}
 
                                </tr><tr></tr>
-                               <tr>
+                               <tr><td width="100px"></td>
                                    <td style="height:50px"><li>SMS પધ્ધતિ દ્વારા હાજરીની નોંધ​</li></td><td width="50"></td>
                                    <td style="height:50px"><li>CCTV કેમેરા દ્વારા દરેક વર્ગ સજ્જ</li></td>
                                    {{--<td style="height:50px"><li>વિધ્યાર્થી કે વાલીને અસંતોષ કે મુંઝ​વણ હોય તો તેમને વિના સંકોચે સંચાલકશ્રીને રુબરુ મળવું જે અંગે સ્ટાફ જોડે રક્ઝક કર​વી નહિ.</li></td><td width="50"></td>--}}
@@ -389,11 +393,14 @@
 
                                </div>
                                <div class="modal-body" style="color: black">
-                                   <table  >
-                                       <tr><td style="height:50px"><li>ઊમેશ સર​ - M.Com.br,અનિલ સર​ - M.Com.</li></td></tr>
-                                       <tr><td style="height:50px"><li>યોગેશ સર - B.C.A.,અઝહર સર - B.Sc.,અશોક સર - B.C.A.</li></td></tr>
-                                       <tr><td style="height:50px"><li>હીના ટીચર B.Com.,મયુરી ટીચર - B.Com.,પ્રિયંક સર - B.Com.Eng.</li></td></tr>
-                                       <tr><td style="height:50px"><li>અંકિત સર - B.E.I.T.,અક્શય સર - B.Com.,પિયુષ સર - B.Com.</li></td></tr>
+                                   <table>
+
+                                       <tr><td width="50px"></td><td  >અનિલ સર​ - M.Com.</td><td width="50px"></td><td style="height:50px">યોગેશ સર - B.C.A.</td></tr>
+                                       <tr><td width="50px"></td><td style="height:50px">હીના ટીચર B.Com.</td><td width="50px"></td><td>મયુરી ટીચર - B.Com.</td></tr>
+                                       <tr><td width="50px"></td><td style="height:50px">પ્રિયંક સર - B.Com.Eng.</td><td width="50px"></td><td>અંકિત સર - B.E.I.T.</td></tr>
+                                       <tr><td width="50px"></td><td style="height:50px">અક્શય સર - B.Com.</td><td width="50px"></td><td>પિયુષ સર - B.Com.</td></tr>
+                                       <tr><td width="50px"></td><td style="height:50px">ઊમેશ સર​ - M.Com</td></tr>
+
                                    </table>
                                </div>
                                <div class="modal-footer">
@@ -533,8 +540,6 @@
     <script src="{{ asset('assets/js/scrollReveal.js') }}" defer></script>
     <!--  Scroll Scripts -->
     <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     {{--<script src="{{ asset('assets/js/jquery.easing.min.js') }}" defer></script>--}}
     <!--  Custom Scripts -->
