@@ -66,25 +66,16 @@
     </nav>
 
 <body>
-<div class="row" >
+<div  style="align-items: center;align-content: center;text-align-all: center;display:inline-grid " >
 
-    @foreach($faculties as $faculty)
-
-    <div class="card border-secondary mb-3 col-lg-4  col-md-4 col-sm-4"  data-scroll-reveal="enter from the bottom after 0.4s">
-        <div class="faculty-div">
-            <h3 class="card-header" >{{$faculty->fname}} {{$faculty->lname}} </h3>
-            <hr />
-            <div class="card-body">
-            <h4>{{$faculty->Subject}}<br /> {{$faculty->qualification}}</h4>
-            <p >
-                {{$faculty->description}}
-
-            </p>
-            </div>
-        </div>
-    </div>
-        @endforeach
-
+   <table style="text-align: center" border="1">
+        <td width="500px"></td>
+       <th style="height:50px"><li>અનુભવી અને નિષ્ણાંત શિક્ષકોની ટીમ.</li></th>
+       <tr><td width="50px"></td><td style="height:50px"><li>ઊમેશ સર​ - M.Com.br,અનિલ સર​ - M.Com.</li></td></tr>
+       <tr><td width="50px"></td><td style="height:50px"><li>યોગેશ સર - B.C.A.,અઝહર સર - B.Sc.,અશોક સર - B.C.A.</li></td></tr>
+       <tr><td width="50px"></td><td style="height:50px"><li>હીના ટીચર B.Com.,મયુરી ટીચર - B.Com.,પ્રિયંક સર - B.Com.Eng.</li></td></tr>
+       <tr><td width="50px"></td><td style="height:50px"><li>અંકિત સર - B.E.I.T.,અક્શય સર - B.Com.,પિયુષ સર - B.Com.</li></td></tr>
+   </table>
 
 </div>
 </div>
