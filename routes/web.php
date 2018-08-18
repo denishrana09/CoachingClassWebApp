@@ -31,6 +31,10 @@ Route::get('/DownloadPaper9', 'viewFilesController@showClass9')->name('PaperClas
 Route::get('/DownloadPaper10', 'viewFilesController@showClass10')->name('PaperClass10');
 Route::get('/DownloadPaper11', 'viewFilesController@showClass11')->name('PaperClass11');
 Route::get('/DownloadPaper12', 'viewFilesController@showClass12')->name('PaperClass12');
+Route::get('/DownloadPaperFYBCom', 'viewFilesController@showClassFYBCom')->name('PaperClassFYBCom');
+Route::get('/DownloadPaperSYBCom', 'viewFilesController@showClassSYBCom')->name('PaperClassSYBCom');
+Route::get('/DownloadPaperTYBCom', 'viewFilesController@showClassTYBCom')->name('PaperClassTYBCom');
+
 
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');

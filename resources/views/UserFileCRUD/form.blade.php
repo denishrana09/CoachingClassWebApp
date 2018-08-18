@@ -18,9 +18,9 @@
                 @for ($i = 5; $i <= 12; $i++)
                     <option value="{{ $i }}">{{ $i }}</option>
                 @endfor
-                <option value="F.Y-B.Com">F.Y-B.Com</option>
-                <option value="S.Y-B.Com">S.Y-B.Com</option>
-                <option value="T.Y-B.Com">T.Y-B.Com</option>
+                <option value="13">F.Y-B.Com</option>
+                <option value="14">S.Y-B.Com</option>
+                <option value="15">T.Y-B.Com</option>
             </select>
         </div>
     </div>

@@ -49,7 +49,7 @@
                         <td>{{ $userfile->description}}</td>
                         <td>
                             <a class="btn btn-info" href="{{ route('userfileCRUD.show',$userfile->id) }}">Show</a>
-                            <a class="btn btn-primary" href="{{ route('userfileCRUD.edit',$userfile->id) }}">Edit</a>
+                            {{--<a class="btn btn-primary" href="{{ route('userfileCRUD.edit',$userfile->id) }}">Edit</a>--}}
                             {!! Form::open(['method' => 'DELETE','route' => ['userfileCRUD.destroy', $userfile->id],'style'=>'display:inline']) !!}
                             {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
                             {!! Form::close() !!}

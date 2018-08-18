@@ -64,8 +64,26 @@ class viewFilesController extends Controller
 
     public function showClass12()
     {
-
         $files = DB::table('user_files')->where('std','=',12)->get();
+        return view('files.index',['files'=>$files]);
+    }
+
+    public function showClassFYBCom()
+    {
+        $files = DB::table('user_files')->where('std','=',13)->get();
+        return view('files.index',['files'=>$files]);
+    }
+
+    public function showClassSYBCom()
+    {
+        $files = DB::table('user_files')->where('std','=',14)->get();
+        return view('files.index',['files'=>$files]);
+    }
+
+    public function showClassTYBCom()
+    {
+
+        $files = DB::table('user_files')->where('std','=',15)->get();
         return view('files.index',['files'=>$files]);
     }
 }

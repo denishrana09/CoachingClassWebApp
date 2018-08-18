@@ -111,6 +111,14 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            a:link{
+                color: white;
+            }
+            a:hover{
+                color: white;
+            }
+
         </style>
     </head>
     @extends('layouts.app')
@@ -259,7 +267,7 @@
                                <ul>
                                <tr>
                                    <td width="100px"></td>
-                                   <td class="text-nowrap"><li>દરેક પ્રેક્ટીકલ વિશયમા સતત પ્રેક્ટિસ આયોજ્નબધ્ધ મહેનત</li></td><td width="50"></td>
+                                   <td class="text-nowrap"><li>દરેક પ્રેક્ટીકલ વિષયમાં સતત પ્રેક્ટિસ આયોજ્નબધ્ધ મહેનત</li></td><td width="50"></td>
                                    <td class="text-nowrap"><li>બોર્ડની પેપર સ્ટાઇલ મુજબ જ્વાબ લખ​વાની સમજણ</li></td>
                                    {{--<td style="height:50px"><li>એક બાળકને શ્રેષ્થ વિધ્યાર્થી બનાવ​વા માટે વાલીમિત્રો આટલુ અવશ્ય કરો આપના બાળકનું ગૃહકાર્ય રોજ કરાવો.</li></td>--}}
 
@@ -273,7 +281,7 @@
 
                                </tr><tr></tr>
                                <tr><td width="100px"></td>
-                                   <td class="text-nowrap"><li>દરેક વિશયનું સંપૂર્ણ રીવીઝન નિષ્ણાંત અને અનુભ​વી શિક્ષકગણ</li></td><td width="50"></td>
+                                   <td class="text-nowrap"><li>દરેક વિષયનુ સંપૂર્ણ રીવીઝન નિષ્ણાંત અને અનુભ​વી શિક્ષકગણ</li></td><td width="50"></td>
                                    <td class="text-nowrap"><li>પૂરતી હ​વા-ઉજાસની સગ​વડ</li></td>
                                    {{--<td style="height:50px"><li>આપના બાળકને આપના સથ​વારાની જરુર છે.</li></td>--}}
 
@@ -335,18 +343,24 @@
                    <div  data-scroll-reveal="enter from the bottom after 0.4s">
 
                        <div class="row" style=" border-bottom:1px solid #000;">
-                       <div class="col-lg-4 " style="text-align: left"><h2> Name </h2>
-                               <h4> Designation </h4>
-                               <h5> Contact </h5>
-                               <h5> E-mail </h5></div>
+                       <div class="col-lg-4 " style="text-align: left">
+                               <h2 style="font-family:'Noto Sans Gujarati';"><br> વિજય સર </h2>
+                               <h4> M.Com </h4>
+                               <h5 style="font-family:'verdana';"> 73831 63531 </h5>
+                               <h5 style="font-family:'verdana';"> 98251 85050 </h5>
+                               <h5> svcclass@yahoo.com </h5></div>
                        <div class="col-lg-4 container-img"><img class="img-responsive" width="100%" height="100%    " src="{{asset('assets/img/faculty/1.jpg')}}"> </div>
                        <div class="col-lg-4 container-paragraph"><p>
 
-                           <ul class="navbar-nav ml-auto">
+                           <ul class="navbar-nav ml-auto"><h3>
                            <li style="color:black" class="nav-item dropdown">
-                               <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                               Our Quality Papers <span class="caret"></span>
+
+                               <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                  aria-haspopup="true" aria-expanded="false" v-pre>
+                                   Download Our <br> Quality Papers <span class="caret"></span>
+
                                </a>
+
 
                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                <a class="dropdown-item" href="{{ route('PaperClass5') }}">
@@ -372,12 +386,23 @@
                                </a>
                                <a class="dropdown-item" href="{{ route('PaperClass11') }}">
                                {{ __('Class 11th') }}
-                               </a> <a class="dropdown-item" href="{{ route('PaperClass12') }}">
+                               </a>
+                               <a class="dropdown-item" href="{{ route('PaperClass12') }}">
                                {{ __('Class 12th') }}
+                               </a>
+                               <a class="dropdown-item" href="{{ route('PaperClassFYBCom') }}">
+                                   {{ __('Class FYBCom') }}
+                               </a>
+                               <a class="dropdown-item" href="{{ route('PaperClassSYBCom') }}">
+                                   {{ __('Class SYBCom') }}
+                               </a>
+                               <a class="dropdown-item" href="{{ route('PaperClassTYBCom') }}">
+                                   {{ __('Class TYBCom') }}
                                </a>
                                </a>
                                </div>
                                </li>
+                               </h3>
                            </ul>
 
                            </p>
@@ -409,7 +434,7 @@
 
                                </div>
                                <div class="modal-body" style="color: black">
-                                   <table>
+                                   <table  style="font-family:'Noto Sans Gujarati';">
 
                                        <tr><td width="50px"></td><td  >અનિલ સર​ - M.Com.</td><td width="50px"></td><td style="height:50px">યોગેશ સર - B.C.A.</td></tr>
                                        <tr><td width="50px"></td><td style="height:50px">હીના ટીચર B.Com.</td><td width="50px"></td><td>મયુરી ટીચર - B.Com.</td></tr>
@@ -515,11 +540,11 @@
 
                    <h2 ><strong>Our Location </strong></h2>
                    <hr />
-                   <div>
-                   <h4>Address ,</h4>
-                   <h4>Over , Here .</h4>
-                   <h4><strong>Call:</strong>  Contact Number </h4>
-                   <h4><strong>Email: </strong>Email@Over.Here</h4>
+                   <div  style="font-family:'Noto Sans Gujarati';">
+                       <h4> <b>Address 1 :</b> ૮/૧૯૫૮-એ, ગોવિંદજીના મંદિરની સામે, શેતાન ફળિયા, ગોપીપુરા.</h4>
+                       <h4> <b>Address 2 :</b> બી-૯,ઉમિયા નગર સોસાયટી,ગોડદરા નહેર પાસે, પર​વટ પાટીયા.</h4>
+                   <h4><strong>Call:</strong>  98251 85050 , 97377 91849</h4>
+                   <h4><strong>Email: </strong> svcclass@yahoo.com</h4>
                </div>
 
 
