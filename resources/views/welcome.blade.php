@@ -486,12 +486,12 @@
            <div class="row set-row-pad"  >
                <div style="margin:0 auto" class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
 
-                   <h2 ><strong>Our Location </strong></h2>
+                   <h2 ><strong>Our Locations </strong></h2>
                    <hr />
                    <div  style="font-family:'Noto Sans Gujarati';">
                        <h4> <b>Address 1 :</b> ૮/૧૯૫૮-એ, ગોવિંદજીના મંદિરની સામે, શેતાન ફળિયા, ગોપીપુરા.</h4>
                        <h4> <b>Address 2 :</b> બી-૯,ઉમિયા નગર સોસાયટી,ગોડદરા નહેર પાસે, પર​વટ પાટીયા.</h4>
-                   <h4><strong>Call:</strong>  98251 85050 , 97377 91849</h4>
+                   <h4><strong>Contact:</strong>  98251 85050 <br /> 97377 91849</h4>
                    <h4><strong>Email: </strong> svcclass@yahoo.com</h4>
                </div>
 
@@ -504,7 +504,7 @@
                <div >
                    <a href="#">  <img src="assets/img/Social/facebook.png" alt="facebook logo" /> </a>
                    <a href="#"> <img src="assets/img/Social/google-plus.png" alt="google-plus logo" /></a>
-                   <a href="#"> <img src="assets/img/Social/whatsapp.png" alt="whatsapp logo" /></a>
+                   <a href="https://wa.me/9825185050"> <img src="assets/img/Social/whatsapp.png" alt="whatsapp logo" /></a>
                </div>
            </div>
 
