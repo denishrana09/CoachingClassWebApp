@@ -234,8 +234,9 @@
 
        </div>
        <!--HOME SECTION TAG LINE END-->
-       <div id="features-sec" class="container set-pad" >
+       <div id="features-sec"  >
            <div class="overlay">
+               <div class="container set-pad">
            <div class="row text-center">
 
                <div  style="margin:0 auto" class="col-lg-8  col-lg-offset-4 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
@@ -314,10 +315,12 @@
                </div>
            </div>
            </div>
+           </div>
        </div>
-       </div>
+
        <!-- FEATURES SECTION END-->
-       <div id="faculty-sec" style="background-color: #000000" >
+       <div id="faculty-sec"   >
+           <div class="overlay">
            <div class="container set-pad">
                <div class="row text-center">
                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" style="margin:0 auto">
@@ -328,29 +331,6 @@
                    </div>
 
                </div>
-               <!--/.HEADER LINE END-->
-               {{--<div class="row" style="display:flex;justify-content:center;align-items:center;">--}}
-                   {{--@foreach($faconind as $faculty)--}}
-                   {{--<div  class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">--}}
-
-                       {{--<div>--}}
-
-                           {{--<img style="float: left" src="{{asset('assets/img/faculty/'.$faculty->path)}}"/>--}}
-                            {{--<div style="float: right">--}}
-                               {{--<h3 >{{$faculty->fname}} {{$faculty->lname}}</h3>--}}
-                               {{--<hr />--}}
-                               {{--<h4>{{$faculty->qualification}} <br /> {{$faculty->Subject}}</h4>--}}
-                               {{--<p >--}}
-                                   {{--{{$faculty->description}}--}}
-                               {{--</p>--}}
-                            {{--</div>--}}
-
-                       {{--</div>--}}
-
-                   {{--</div>--}}
-                   {{--@endforeach--}}
-
-               {{--</div>--}}
                <div class="row" style="display:flex;justify-content:center;align-items:center;" >
                    <div  data-scroll-reveal="enter from the bottom after 0.4s">
 
@@ -450,6 +430,8 @@
 
                </div>
            </div>
+       </div>
+       </div>
        </div>
        <!-- FACULTY SECTION END-->
        <!-- Gallery Section starts -->
