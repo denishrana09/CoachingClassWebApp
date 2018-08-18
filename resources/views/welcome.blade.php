@@ -37,25 +37,7 @@
             }
 
 
-            .modalDialog {
-                position: fixed;
-                font-family: Arial, Helvetica, sans-serif;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                background: rgba(0,0,0,0.8);
-                z-index: 99999;
-                opacity:0;
-                -webkit-transition: opacity 400ms ease-in;
-                -moz-transition: opacity 400ms ease-in;
-                transition: opacity 400ms ease-in;
-                pointer-events: none;
-            }
-            .modalDialog:target {
-                opacity:1;
-                pointer-events: auto;
-            }
+            
             .modalDialog > div {
                 width: 400px;
                 position: relative;
@@ -70,33 +52,7 @@
 
 
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
+           
 
             .links > a {
                 color: #636b6f;
@@ -108,10 +64,7 @@
                 text-transform: uppercase;
             }
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-
+           
 
         </style>
     </head>
@@ -128,7 +81,7 @@
                             <br />
 
                             <br />
-                            <h1 style="font-family:'Noto Sans Gujarati';color: white;font-size:7vw;">
+                            <h1 style="font-family:'Noto Sans Gujarati',serif;color: white;font-size:7vw;">
                                 ॥ શ્રી સરસ્વતૈય નમ​:॥</h1>
                             <h5 style="color: white;font-size:3vw;">
                                 "Knowledge is the best wealth which can not be stolen by anyone"
@@ -181,13 +134,14 @@
                     {{--</div>--}}
                         <div class="row row-list flexslider set-flexi " id="main-section">
                             <div class="col-lg-3 container-img"><img class="img-responsive" src="{{asset('assets/img/vidhyaClassesLogo.jpg')}}"> </div>
-                            <div class="col-lg-9 container-paragraph"><p>
+                            <div class="col-lg-9 container-paragraph">
+                                <p>
                                     <ul class="slides move-me">
                                     <!-- Slider 01 -->
                                     <li>
-                                    <h1 style="font-family:'Noto Sans Gujarati';font-size: 100px;color: #E32E2E;-webkit-text-stroke-width:2px;-webkit-text-stroke-color: white;">
+                                    <h1 style="font-family:'Noto Sans Gujarati',serif;font-size: 100px;color: #E32E2E;-webkit-text-stroke-width:2px;-webkit-text-stroke-color: white;">
                                     શ્રી વિદ્યા</h1>
-                                    <h1 style="font-family:'Noto Sans Gujarati';font-size: 40px;">કોચીંગ ક્લાસીસ</h1>
+                                    <h1 style="font-family:'Noto Sans Gujarati',serif;font-size: 40px;">કોચીંગ ક્લાસીસ</h1>
                                     {{--<a  href="#features-sec" class="btn btn-info btn-lg" >--}}
                                     {{--GET AWESOME--}}
                                     {{--</a>--}}
@@ -199,9 +153,9 @@
 
                                     <!-- Slider 02 -->
                                     <li>
-                                    <h1 style="font-family:'Noto Sans Gujarati';font-size: 100px;color: #E32E2E;-webkit-text-stroke-width:2px;-webkit-text-stroke-color: white;">
+                                    <h1 style="font-family:'Noto Sans Gujarati',serif;font-size: 100px;color: #E32E2E;-webkit-text-stroke-width:2px;-webkit-text-stroke-color: white;">
                                     શ્રી વિદ્યા</h1>
-                                    <h1 style="font-family:'Noto Sans Gujarati';font-size: 40px;">એજ્યુકેશન</h1>
+                                    <h1 style="font-family:'Noto Sans Gujarati',serif;font-size: 40px;">એજ્યુકેશન</h1>
                                     {{--<a  href="#features-sec" class="btn btn-primary btn-lg" >--}}
                                     {{--GET AWESOME--}}
                                     {{--</a>--}}
@@ -210,7 +164,7 @@
                                     {{--</a>--}}
                                     </li>
                                     <!-- End Slider 02 -->
-                                </ul>
+                                    </ul>
 
                                 </p>
                             </div>
@@ -228,7 +182,7 @@
 
                    <div style="padding-top: 1mm" class="col-lg-12  col-md-12 col-sm-12">
 
-                           <marquee behavior="SCROLL" direction="left"><h2 style="font-family:'Noto Sans Gujarati';" data-scroll-reveal="enter from the bottom after 0.5s" ><i class="fa fa-circle-o-notch"></i>
+                           <marquee behavior="SCROLL" direction="left"><h2 style="font-family:'Noto Sans Gujarati',serif;" data-scroll-reveal="enter from the bottom after 0.5s" ><i class="fa fa-circle-o-notch"></i>
                            ધો. ૧ થી ટી.વાય.બી.કોમ​. સુધીના વર્ગો <i class="fa fa-circle-o-notch"></i> </h2></marquee>
                    </div>
                </div>
@@ -242,7 +196,7 @@
            <div class="row text-center">
 
                <div  style="margin:0 auto" class="col-lg-8  col-lg-offset-4 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-                   <h1  style="font-family:'Noto Sans Gujarati';font-size: 5vw" data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line">
+                   <h1  style="font-family:'Noto Sans Gujarati',serif;font-size: 5vw" data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line">
                        અમારી વિશેષતાઓ
                    </h1>
                </div>
@@ -257,7 +211,7 @@
                    <div class="table-responsive">
                        {{--<i class="fa fa-paper-plane-o fa-4x icon-round-border" ></i>--}}
                        <h5 style="font-family:'Noto Sans Gujarati';">
-                           <table table class="table" >
+                           <table class="table" >
                                <ul>
                                <tr>
                                    <td width="100px"></td>
