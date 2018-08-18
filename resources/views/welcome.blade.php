@@ -112,12 +112,6 @@
                 margin-bottom: 30px;
             }
 
-            a:link{
-                color: white;
-            }
-            a:hover{
-                color: white;
-            }
 
         </style>
     </head>
@@ -355,14 +349,14 @@
                            <ul class="navbar-nav ml-auto"><h3>
                            <li style="color:black" class="nav-item dropdown">
 
-                               <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                               <a id="navbarDropdown" style="color: white;" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                                   aria-haspopup="true" aria-expanded="false" v-pre>
                                    Download Our <br> Quality Papers <span class="caret"></span>
 
                                </a>
 
 
-                               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                               <div class="dropdown-menu" aria-labelledby="navbarDropdown" color="black">
                                <a class="dropdown-item" href="{{ route('PaperClass5') }}">
                                {{ __('Class 5th') }}
                                </a>
@@ -391,13 +385,13 @@
                                {{ __('Class 12th') }}
                                </a>
                                <a class="dropdown-item" href="{{ route('PaperClassFYBCom') }}">
-                                   {{ __('Class FYBCom') }}
+                                   {{ __('F.Y. B.Com.') }}
                                </a>
                                <a class="dropdown-item" href="{{ route('PaperClassSYBCom') }}">
-                                   {{ __('Class SYBCom') }}
+                                   {{ __('S.Y. B.Com.') }}
                                </a>
                                <a class="dropdown-item" href="{{ route('PaperClassTYBCom') }}">
-                                   {{ __('Class TYBCom') }}
+                                   {{ __('T.Y. B.Com.') }}
                                </a>
                                </a>
                                </div>
