@@ -124,44 +124,45 @@
                     <div class="col-lg-12  col-md-12 col-sm-12">
                         <div>
                             <br />
-                            <h5 style="color: white";>
+
+                            <br />
+                            <h1 style="font-family:'Noto Sans Gujarati';color: white;font-size:7vw;">
+                                ॥ શ્રી સરસ્વતૈય નમ​:॥</h1>
+                            <h5 style="color: white;font-size:3vw;">
                                 "Knowledge is the best wealth which can not be stolen by anyone"
                             </h5>
-                            <br />
-                            <h1 style="font-family:'Noto Sans Gujarati';color: white">
-                                ॥ શ્રી સરસ્વતૈય નમ​:॥</h1>
                         </div>
-                        <div class="flexslider set-flexi" id="main-section" style="background-image: url('{{ asset('assets/img/vidhyaClassesLogo.jpg') }}');background-repeat: no-repeat;">
-                            <ul class="slides move-me">
-                                <!-- Slider 01 -->
-                                <li>
-                                    <h1 style="font-family:'Noto Sans Gujarati';font-size: 100px;color: #E32E2E;-webkit-text-stroke-width:2px;-webkit-text-stroke-color: white;">
-                                        શ્રી વિદ્યા</h1>
-                                    <h1 style="font-family:'Noto Sans Gujarati';font-size: 40px;">કોચીંગ ક્લાસીસ</h1>
+                        {{--<div class="flexslider set-flexi" id="main-section" style="background-image: url('{{ asset('assets/img/vidhyaClassesLogo.jpg') }}');background-repeat: no-repeat;">--}}
+                            {{--<ul class="slides move-me">--}}
+                                {{--<!-- Slider 01 -->--}}
+                                {{--<li>--}}
+                                    {{--<h1 style="font-family:'Noto Sans Gujarati';font-size: 100px;color: #E32E2E;-webkit-text-stroke-width:2px;-webkit-text-stroke-color: white;">--}}
+                                        {{--શ્રી વિદ્યા</h1>--}}
+                                    {{--<h1 style="font-family:'Noto Sans Gujarati';font-size: 40px;">કોચીંગ ક્લાસીસ</h1>--}}
                                     {{--<a  href="#features-sec" class="btn btn-info btn-lg" >--}}
                                         {{--GET AWESOME--}}
                                     {{--</a>--}}
                                     {{--<a  href="#features-sec" class="btn btn-success btn-lg" >--}}
                                         {{--FEATURE LIST--}}
                                     {{--</a>--}}
-                                </li>
-                                <!-- End Slider 01 -->
+                                {{--</li>--}}
+                                {{--<!-- End Slider 01 -->--}}
 
-                                <!-- Slider 02 -->
-                                <li>
-                                    <h1 style="font-family:'Noto Sans Gujarati';font-size: 100px;color: #E32E2E;-webkit-text-stroke-width:2px;-webkit-text-stroke-color: white;">
-                                        શ્રી વિદ્યા</h1>
-                                    <h1 style="font-family:'Noto Sans Gujarati';font-size: 40px;">એજ્યુકેશન</h1>
+                                {{--<!-- Slider 02 -->--}}
+                                {{--<li>--}}
+                                    {{--<h1 style="font-family:'Noto Sans Gujarati';font-size: 100px;color: #E32E2E;-webkit-text-stroke-width:2px;-webkit-text-stroke-color: white;">--}}
+                                        {{--શ્રી વિદ્યા</h1>--}}
+                                    {{--<h1 style="font-family:'Noto Sans Gujarati';font-size: 40px;">એજ્યુકેશન</h1>--}}
                                     {{--<a  href="#features-sec" class="btn btn-primary btn-lg" >--}}
                                         {{--GET AWESOME--}}
                                     {{--</a>--}}
                                     {{--<a  href="#features-sec" class="btn btn-danger btn-lg" >--}}
                                         {{--FEATURE LIST--}}
                                     {{--</a>--}}
-                                </li>
-                                <!-- End Slider 02 -->
+                                {{--</li>--}}
+                                {{--<!-- End Slider 02 -->--}}
 
-                                <!-- Slider 03 -->
+                                {{--<!-- Slider 03 -->--}}
                                 {{--<li>--}}
                                     {{--<h3 style="font-family:'Noto Sans Gujarati';">શ્રી વિદ્યા</h3>--}}
                                     {{--<h1>AWESOME FACULTY PANEL</h1>--}}
@@ -172,12 +173,46 @@
                                         {{--FEATURE LIST--}}
                                     {{--</a>--}}
                                 {{--</li>--}}
-                                <!-- End Slider 03 -->
-                            </ul>
-                        </div>
-                    </div>
+                                {{--<!-- End Slider 03 -->--}}
+                            {{--</ul>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                        <div class="row row-list flexslider set-flexi" id="main-section">
+                            <div class="col-lg-3 container-img"><img class="img-responsive" src="{{asset('assets/img/vidhyaClassesLogo.jpg')}}"> </div>
+                            <div class="col-lg-9 container-paragraph"><p>
+                                    <ul class="slides move-me">
+                                    <!-- Slider 01 -->
+                                    <li>
+                                    <h1 style="font-family:'Noto Sans Gujarati';font-size: 100px;color: #E32E2E;-webkit-text-stroke-width:2px;-webkit-text-stroke-color: white;">
+                                    શ્રી વિદ્યા</h1>
+                                    <h1 style="font-family:'Noto Sans Gujarati';font-size: 40px;">કોચીંગ ક્લાસીસ</h1>
+                                    {{--<a  href="#features-sec" class="btn btn-info btn-lg" >--}}
+                                    {{--GET AWESOME--}}
+                                    {{--</a>--}}
+                                    {{--<a  href="#features-sec" class="btn btn-success btn-lg" >--}}
+                                    {{--FEATURE LIST--}}
+                                    {{--</a>--}}
+                                    </li>
+                                    <!-- End Slider 01 -->
 
-                </div>
+                                    <!-- Slider 02 -->
+                                    <li>
+                                    <h1 style="font-family:'Noto Sans Gujarati';font-size: 100px;color: #E32E2E;-webkit-text-stroke-width:2px;-webkit-text-stroke-color: white;">
+                                    શ્રી વિદ્યા</h1>
+                                    <h1 style="font-family:'Noto Sans Gujarati';font-size: 40px;">એજ્યુકેશન</h1>
+                                    {{--<a  href="#features-sec" class="btn btn-primary btn-lg" >--}}
+                                    {{--GET AWESOME--}}
+                                    {{--</a>--}}
+                                    {{--<a  href="#features-sec" class="btn btn-danger btn-lg" >--}}
+                                    {{--FEATURE LIST--}}
+                                    {{--</a>--}}
+                                    </li>
+                                    <!-- End Slider 02 -->
+
+                                </p></div>
+                        </div>
+
+                    </div>
             </div>
         </div>
 
@@ -209,45 +244,45 @@
 
            </div>
            <!--/.HEADER LINE END-->
-           <div class="row" style="padding-left:65px">
+           <div class="row" >
 
 
-               <div class="col-lg-6  col-md-6 col-sm-6" data-scroll-reveal="enter from the bottom after 0.4s">
-                   <div >
+               <div class="col-md-12 col-sm-12" data-scroll-reveal="enter from the bottom after 0.4s">
+                   <div class="table-responsive">
                        {{--<i class="fa fa-paper-plane-o fa-4x icon-round-border" ></i>--}}
                        <h5 style="font-family:'Noto Sans Gujarati';">
-                           <table border="0" width="1000" >
+                           <table table class="table" >
                                <ul>
                                <tr>
                                    <td width="100px"></td>
-                                   <td style="height:50px"><li>દરેક પ્રેક્ટીકલ વિશયમા સતત પ્રેક્ટિસ આયોજ્નબધ્ધ મહેનત</li></td><td width="50"></td>
-                                   <td style="height:50px"><li>બોર્ડની પેપર સ્ટાઇલ મુજબ જ્વાબ લખ​વાની સમજણ</li></td>
+                                   <td class="text-nowrap"><li>દરેક પ્રેક્ટીકલ વિશયમા સતત પ્રેક્ટિસ આયોજ્નબધ્ધ મહેનત</li></td><td width="50"></td>
+                                   <td class="text-nowrap"><li>બોર્ડની પેપર સ્ટાઇલ મુજબ જ્વાબ લખ​વાની સમજણ</li></td>
                                    {{--<td style="height:50px"><li>એક બાળકને શ્રેષ્થ વિધ્યાર્થી બનાવ​વા માટે વાલીમિત્રો આટલુ અવશ્ય કરો આપના બાળકનું ગૃહકાર્ય રોજ કરાવો.</li></td>--}}
 
                                </tr><tr></tr>
                                <tr><td width="100px"></td>
-                                    <td style="height: 50px;"><li>અઠવાડિક પરિક્ષાનું આયોજન.</li></td>
+                                    <td class="text-nowrap"><li>અઠવાડિક પરિક્ષાનું આયોજન.</li></td>
                                     <td width="50"></td>
-                                   <td style="height:50px"><li>નબળા વિધ્યાર્થીઓ પર વ્યક્તિગત ધ્યાન</li></td>
+                                   <td class="text-nowrap"><li>નબળા વિધ્યાર્થીઓ પર વ્યક્તિગત ધ્યાન</li></td>
                                    {{--<td style="height:50px"><li>હાજરી અને પ્રગતિની જાણ માટે મહિનામાં એકાદવાર સંચાલકશ્રીને અચૂક રુબરુ મળો.</li></td><td width="50"></td>--}}
 
 
                                </tr><tr></tr>
                                <tr><td width="100px"></td>
-                                   <td style="height:50px"><li>દરેક વિશયનું સંપૂર્ણ રીવીઝન નિષ્ણાંત અને અનુભ​વી શિક્ષકગણ</li></td><td width="50"></td>
-                                   <td style="height:50px"><li>પૂરતી હ​વા-ઉજાસની સગ​વડ</li></td>
+                                   <td class="text-nowrap"><li>દરેક વિશયનું સંપૂર્ણ રીવીઝન નિષ્ણાંત અને અનુભ​વી શિક્ષકગણ</li></td><td width="50"></td>
+                                   <td class="text-nowrap"><li>પૂરતી હ​વા-ઉજાસની સગ​વડ</li></td>
                                    {{--<td style="height:50px"><li>આપના બાળકને આપના સથ​વારાની જરુર છે.</li></td>--}}
 
                                </tr><tr></tr>
                                <tr><td width="100px"></td>
-                                   <td style="height:50px"><li>સાંસ્ક્રુતિક અને મનોરંજન કાર્યક્રમનુ આયોજન</li></td><td width="50"></td>
-                                   <td style="height:50px"><li>પ્રોજેક્ટર પર વિષય વસ્તુની સમજૂતી</li></td>
+                                   <td class="text-nowrap"><li>સાંસ્ક્રુતિક અને મનોરંજન કાર્યક્રમનુ આયોજન</li></td><td width="50"></td>
+                                   <td class="text-nowrap"><li>પ્રોજેક્ટર પર વિષય વસ્તુની સમજૂતી</li></td>
                                    {{--<td style="height:50px"><li>આપના બાળકની જીગ્યાશાવ્રુતિ પ્રબળ બનાવ​વા સધન પ્રયત્ન કરો.</li></td>--}}
 
                                </tr><tr></tr>
                                <tr><td width="100px"></td>
-                                   <td style="height:50px"><li>SMS પધ્ધતિ દ્વારા હાજરીની નોંધ​</li></td><td width="50"></td>
-                                   <td style="height:50px"><li>CCTV કેમેરા દ્વારા દરેક વર્ગ સજ્જ</li></td>
+                                   <td class="text-nowrap"><li>SMS પધ્ધતિ દ્વારા હાજરીની નોંધ​</li></td><td width="50"></td>
+                                   <td class="text-nowrap"><li>CCTV કેમેરા દ્વારા દરેક વર્ગ સજ્જ</li></td>
                                    {{--<td style="height:50px"><li>વિધ્યાર્થી કે વાલીને અસંતોષ કે મુંઝ​વણ હોય તો તેમને વિના સંકોચે સંચાલકશ્રીને રુબરુ મળવું જે અંગે સ્ટાફ જોડે રક્ઝક કર​વી નહિ.</li></td><td width="50"></td>--}}
 
                                </tr><tr></tr>
@@ -317,56 +352,98 @@
                        {{--<div class="faculty-div" style="align-items: center;width: 33.34%">--}}
                            {{--<img src="{{asset('assets/img/faculty/1.jpg')}}" height="300px" width="350px"  class="img-rounded" />--}}
                        {{--</div>--}}
-                       <table border="0" >
-                           <tr>
-                               <td style="height: 500px" width="250px">
-                                    <h2> Name </h2>
-                                   <h3> Designation </h3>
-                                   <h3> Contact </h3>
-                                   <h3> E-mail </h3>
-                               </td>
-                               <td width="500px">
-                                   <img src="{{asset('assets/img/faculty/1.jpg')}}" height="100%" width="100%"  class="img-rounded" />
-                               </td>
-                               <td width="250px" style="justify-content:center;align-items:center;padding-left: 10%">
-                                   <li class="nav-item dropdown">
-                                       <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                           Our Quality Papers <span class="caret"></span>
-                                       </a>
+                       {{--<table border="0" >--}}
+                           {{--<tr>--}}
+                               {{--<td style="height: 500px" width="250px">--}}
+                                    {{--<h2> Name </h2>--}}
+                                   {{--<h3> Designation </h3>--}}
+                                   {{--<h3> Contact </h3>--}}
+                                   {{--<h3> E-mail </h3>--}}
+                               {{--</td>--}}
+                               {{--<td width="500px">--}}
+                                   {{--<img class="img-responsive" src="{{asset('assets/img/faculty/1.jpg')}}" width="460" height="345" />--}}
+                               {{--</td>--}}
+                               {{--<td width="250px" style="justify-content:center;align-items:center;padding-left: 10%">--}}
+                                   {{--<li class="nav-item dropdown">--}}
+                                       {{--<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>--}}
+                                           {{--Our Quality Papers <span class="caret"></span>--}}
+                                       {{--</a>--}}
 
-                                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                           <a class="dropdown-item" href="{{ route('PaperClass5') }}">
-                                               {{ __('Class 5th') }}
-                                           </a>
-                                           <a class="dropdown-item" href="{{ route('PaperClass6') }}">
-                                               {{ __('Class 6th') }}
+                                       {{--<div class="dropdown-menu" aria-labelledby="navbarDropdown">--}}
+                                           {{--<a class="dropdown-item" href="{{ route('PaperClass5') }}">--}}
+                                               {{--{{ __('Class 5th') }}--}}
+                                           {{--</a>--}}
+                                           {{--<a class="dropdown-item" href="{{ route('PaperClass6') }}">--}}
+                                               {{--{{ __('Class 6th') }}--}}
 
-                                               <a class="dropdown-item" href="{{ route('PaperClass7') }}">
-                                                   {{ __('Class 7th') }}
-                                               </a>
+                                               {{--<a class="dropdown-item" href="{{ route('PaperClass7') }}">--}}
+                                                   {{--{{ __('Class 7th') }}--}}
+                                               {{--</a>--}}
 
-                                               <a class="dropdown-item" href="{{ route('PaperClass8') }}">
-                                                   {{ __('Class 8th') }}
-                                               </a>
+                                               {{--<a class="dropdown-item" href="{{ route('PaperClass8') }}">--}}
+                                                   {{--{{ __('Class 8th') }}--}}
+                                               {{--</a>--}}
 
-                                               <a class="dropdown-item" href="{{ route('PaperClass9') }}">
-                                                   {{ __('Class 9th') }}
-                                               </a>
+                                               {{--<a class="dropdown-item" href="{{ route('PaperClass9') }}">--}}
+                                                   {{--{{ __('Class 9th') }}--}}
+                                               {{--</a>--}}
 
-                                               <a class="dropdown-item" href="{{ route('PaperClass10') }}">
-                                                   {{ __('Class 10th') }}
-                                               </a>
-                                               <a class="dropdown-item" href="{{ route('PaperClass11') }}">
-                                                   {{ __('Class 11th') }}
-                                               </a> <a class="dropdown-item" href="{{ route('PaperClass12') }}">
-                                                   {{ __('Class 12th') }}
-                                               </a>
-                                           </a>
-                                       </div>
-                                   </li>
-                               </td>
-                           </tr>
-                       </table>
+                                               {{--<a class="dropdown-item" href="{{ route('PaperClass10') }}">--}}
+                                                   {{--{{ __('Class 10th') }}--}}
+                                               {{--</a>--}}
+                                               {{--<a class="dropdown-item" href="{{ route('PaperClass11') }}">--}}
+                                                   {{--{{ __('Class 11th') }}--}}
+                                               {{--</a> <a class="dropdown-item" href="{{ route('PaperClass12') }}">--}}
+                                                   {{--{{ __('Class 12th') }}--}}
+                                               {{--</a>--}}
+                                           {{--</a>--}}
+                                       {{--</div>--}}
+                                   {{--</li>--}}
+                               {{--</td>--}}
+                           {{--</tr>--}}
+                       {{--</table>--}}
+                       <div class="row" style=" border-bottom:1px solid #000;">
+                       <div class="col-lg-4"><h3><h2> Name </h2>
+                               <h3> Designation </h3>
+                               <h3> Contact </h3>
+                               <h3> E-mail </h3></h3></div>
+                       <div class="col-lg-4 container-img"><img class="img-responsive" width="100%" height="100%    " src="{{asset('assets/img/faculty/1.jpg')}}"> </div>
+                       <div class="col-lg-4 container-paragraph"><p><li style="color:black" class="nav-item dropdown">
+                               <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                               Our Quality Papers <span class="caret"></span>
+                               </a>
+
+                               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                               <a class="dropdown-item" href="{{ route('PaperClass5') }}">
+                               {{ __('Class 5th') }}
+                               </a>
+                               <a class="dropdown-item" href="{{ route('PaperClass6') }}">
+                               {{ __('Class 6th') }}
+
+                               <a class="dropdown-item" href="{{ route('PaperClass7') }}">
+                               {{ __('Class 7th') }}
+                               </a>
+
+                               <a class="dropdown-item" href="{{ route('PaperClass8') }}">
+                               {{ __('Class 8th') }}
+                               </a>
+
+                               <a class="dropdown-item" href="{{ route('PaperClass9') }}">
+                               {{ __('Class 9th') }}
+                               </a>
+
+                               <a class="dropdown-item" href="{{ route('PaperClass10') }}">
+                               {{ __('Class 10th') }}
+                               </a>
+                               <a class="dropdown-item" href="{{ route('PaperClass11') }}">
+                               {{ __('Class 11th') }}
+                               </a> <a class="dropdown-item" href="{{ route('PaperClass12') }}">
+                               {{ __('Class 12th') }}
+                               </a>
+                               </a>
+                               </div>
+                               </li></p></div>
+                       </div>
 
                </div>
 
