@@ -177,7 +177,7 @@
                             {{--</ul>--}}
                         {{--</div>--}}
                     {{--</div>--}}
-                        <div class="row row-list flexslider set-flexi" id="main-section">
+                        <div class="row row-list flexslider set-flexi " id="main-section">
                             <div class="col-lg-3 container-img"><img class="img-responsive" src="{{asset('assets/img/vidhyaClassesLogo.jpg')}}"> </div>
                             <div class="col-lg-9 container-paragraph"><p>
                                     <ul class="slides move-me">
@@ -233,6 +233,7 @@
        </div>
        <!--HOME SECTION TAG LINE END-->
        <div id="features-sec" class="container set-pad" >
+           <div class="overlay">
            <div class="row text-center">
 
                <div  style="margin:0 auto" class="col-lg-8  col-lg-offset-4 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
@@ -312,6 +313,7 @@
            </div>
            </div>
        </div>
+       </div>
        <!-- FEATURES SECTION END-->
        <div id="faculty-sec" style="background-color: #000000" >
            <div class="container set-pad">
@@ -349,66 +351,17 @@
                {{--</div>--}}
                <div class="row" style="display:flex;justify-content:center;align-items:center;" >
                    <div  data-scroll-reveal="enter from the bottom after 0.4s">
-                       {{--<div class="faculty-div" style="align-items: center;width: 33.34%">--}}
-                           {{--<img src="{{asset('assets/img/faculty/1.jpg')}}" height="300px" width="350px"  class="img-rounded" />--}}
-                       {{--</div>--}}
-                       {{--<table border="0" >--}}
-                           {{--<tr>--}}
-                               {{--<td style="height: 500px" width="250px">--}}
-                                    {{--<h2> Name </h2>--}}
-                                   {{--<h3> Designation </h3>--}}
-                                   {{--<h3> Contact </h3>--}}
-                                   {{--<h3> E-mail </h3>--}}
-                               {{--</td>--}}
-                               {{--<td width="500px">--}}
-                                   {{--<img class="img-responsive" src="{{asset('assets/img/faculty/1.jpg')}}" width="460" height="345" />--}}
-                               {{--</td>--}}
-                               {{--<td width="250px" style="justify-content:center;align-items:center;padding-left: 10%">--}}
-                                   {{--<li class="nav-item dropdown">--}}
-                                       {{--<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>--}}
-                                           {{--Our Quality Papers <span class="caret"></span>--}}
-                                       {{--</a>--}}
 
-                                       {{--<div class="dropdown-menu" aria-labelledby="navbarDropdown">--}}
-                                           {{--<a class="dropdown-item" href="{{ route('PaperClass5') }}">--}}
-                                               {{--{{ __('Class 5th') }}--}}
-                                           {{--</a>--}}
-                                           {{--<a class="dropdown-item" href="{{ route('PaperClass6') }}">--}}
-                                               {{--{{ __('Class 6th') }}--}}
-
-                                               {{--<a class="dropdown-item" href="{{ route('PaperClass7') }}">--}}
-                                                   {{--{{ __('Class 7th') }}--}}
-                                               {{--</a>--}}
-
-                                               {{--<a class="dropdown-item" href="{{ route('PaperClass8') }}">--}}
-                                                   {{--{{ __('Class 8th') }}--}}
-                                               {{--</a>--}}
-
-                                               {{--<a class="dropdown-item" href="{{ route('PaperClass9') }}">--}}
-                                                   {{--{{ __('Class 9th') }}--}}
-                                               {{--</a>--}}
-
-                                               {{--<a class="dropdown-item" href="{{ route('PaperClass10') }}">--}}
-                                                   {{--{{ __('Class 10th') }}--}}
-                                               {{--</a>--}}
-                                               {{--<a class="dropdown-item" href="{{ route('PaperClass11') }}">--}}
-                                                   {{--{{ __('Class 11th') }}--}}
-                                               {{--</a> <a class="dropdown-item" href="{{ route('PaperClass12') }}">--}}
-                                                   {{--{{ __('Class 12th') }}--}}
-                                               {{--</a>--}}
-                                           {{--</a>--}}
-                                       {{--</div>--}}
-                                   {{--</li>--}}
-                               {{--</td>--}}
-                           {{--</tr>--}}
-                       {{--</table>--}}
                        <div class="row" style=" border-bottom:1px solid #000;">
-                       <div class="col-lg-4"><h3><h2> Name </h2>
-                               <h3> Designation </h3>
-                               <h3> Contact </h3>
-                               <h3> E-mail </h3></h3></div>
+                       <div class="col-lg-4 " style="text-align: left"><h2> Name </h2>
+                               <h4> Designation </h4>
+                               <h5> Contact </h5>
+                               <h5> E-mail </h5></h3></div>
                        <div class="col-lg-4 container-img"><img class="img-responsive" width="100%" height="100%    " src="{{asset('assets/img/faculty/1.jpg')}}"> </div>
-                       <div class="col-lg-4 container-paragraph"><p><li style="color:black" class="nav-item dropdown">
+                       <div class="col-lg-4 container-paragraph"><p>
+
+                           <ul class="navbar-nav ml-auto">
+                           <li style="color:black" class="nav-item dropdown">
                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                Our Quality Papers <span class="caret"></span>
                                </a>
@@ -442,7 +395,11 @@
                                </a>
                                </a>
                                </div>
-                               </li></p></div>
+                               </li>
+                           </ul>
+
+                           </p>
+                       </div>
                        </div>
 
                </div>
