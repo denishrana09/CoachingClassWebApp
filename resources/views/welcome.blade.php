@@ -180,9 +180,11 @@
            <div class="container">
                <div class="row  text-center" >
 
-                   <div style="padding-top: 1mm" class="col-lg-12  col-md-12 col-sm-12">
+                   <div style="padding-top: 1mm" class="col-lg-12  col-md-12 col-sm-12 ">
 
-                           <marquee behavior="SCROLL" direction="left"><h2 style="font-family:'Noto Sans Gujarati',serif;" data-scroll-reveal="enter from the bottom after 0.5s" ><i class="fa fa-circle-o-notch"></i>
+                           <marquee behavior="SCROLL" direction="left">
+                           <h2 style="font-family:'Noto Sans Gujarati',serif;font-size: 2vw" data-scroll-reveal="enter from the bottom after 0.5s" >
+                           <i class="fa fa-circle-o-notch"></i>
                            ધો. ૧ થી ટી.વાય.બી.કોમ​. સુધીના વર્ગો <i class="fa fa-circle-o-notch"></i> </h2></marquee>
                    </div>
                </div>
@@ -292,11 +294,12 @@
 
                        <div class="row" style=" border-bottom:1px solid #000;">
                        <div class="col-lg-4 " style="text-align: left">
-                               <h2 style="font-family:'Noto Sans Gujarati';"><br> વિજય સર </h2>
-                               <h4> M.Com </h4>
-                               <h5 style="font-family:'verdana';"> 73831 63531 </h5>
-                               <h5 style="font-family:'verdana';"> 98251 85050 </h5>
-                               <h5> svcclass@yahoo.com </h5></div>
+                               <h2 style="font-family:'Noto Sans Gujarati';"><br> &nbsp; વિજય સર </h2>
+                               <h4>&nbsp;&nbsp; M.Com </h4>
+                               <h5 style="font-family:'verdana';"> &nbsp;&nbsp;73831 63531 </h5>
+                               <h5 style="font-family:'verdana';"> &nbsp;&nbsp;98251 85050 </h5>
+                               <h5> &nbsp;&nbsp; svcclass@yahoo.com</h5>
+                               <h5> &nbsp;&nbsp; svcclass@gmail.com </h5></div>
                        <div class="col-lg-4 container-img"><img class="img-responsive" width="100%" height="100%    " src="{{asset('assets/img/faculty/1.jpg')}}"> </div>
                        <div class="col-lg-4 container-paragraph"><p>
 
@@ -305,7 +308,7 @@
 
                                <a id="navbarDropdown" style="color: white;" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                                   aria-haspopup="true" aria-expanded="false" v-pre>
-                                   Download Our <br> Quality Papers <span class="caret"></span>
+                                   &nbsp;&nbsp;Download Our <br> &nbsp;&nbsp;Quality Papers <span class="caret"></span>
 
                                </a>
 
@@ -490,9 +493,11 @@
                    <hr />
                    <div  style="font-family:'Noto Sans Gujarati';">
                        <h4> <b>Address 1 :</b> ૮/૧૯૫૮-એ, ગોવિંદજીના મંદિરની સામે, શેતાન ફળિયા, ગોપીપુરા.</h4>
+                       <h4><strong>Contact:</strong> વિજય સર<br> 98251 85050 </br> 97377 91849<br/></h4>
                        <h4> <b>Address 2 :</b> બી-૯,ઉમિયા નગર સોસાયટી,ગોડદરા નહેર પાસે, પર​વટ પાટીયા.</h4>
-                   <h4><strong>Contact:</strong>  98251 85050 <br /> 97377 91849</h4>
+                   <h4><strong>Contact:</strong> જાગૃતિબેન મણીકાવાલા <br> 73831 63531 <br/> </h4>
                    <h4><strong>Email: </strong> svcclass@yahoo.com</h4>
+                   <h4>svcclass@gmail.com</h4>
                </div>
 
 
