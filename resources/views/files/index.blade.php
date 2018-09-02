@@ -11,7 +11,8 @@
         @foreach($files as $file)
             <tr>
                 <td>{{$file->description}}</td>
-                <td><a href="{{asset('assets/pdf/').$file->url}}"> Link </a></td>
+                {{--<td><a href="{{asset('assets/pdf/').$file->url}}"> Link </a></td>--}}
+                <td><a href="{{asset('assets/pdf')."/".$file->url}}"> Link </a></td>
             </tr>
             @endforeach
     </table>

@@ -40,8 +40,6 @@
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
                     <!-- Authentication Links -->
-                    @guest
-
                                 <li> <a class="nav-link" href="{{ route('PaperClass5') }}">
                                     {{ __('Class 5th') }}
                                     </a></li>
@@ -70,6 +68,15 @@
                                 <li> <a class="nav-link" href="{{ route('PaperClass12') }}">
                                         {{ __('Class 12th') }}
                                     </a></li>
+                    <li> <a class="nav-link" href="{{ route('PaperClassFYBCom') }}">
+                            {{ __('F.Y. B.Com.') }}
+                        </a></li>
+                    <li> <a class="nav-link" href="{{ route('PaperClassSYBCom') }}">
+                            {{ __('S.Y. B.Com.') }}
+                        </a></li>
+                    <li> <a class="nav-link" href="{{ route('PaperClassTYBCom') }}">
+                            {{ __('T.Y. B.Com') }}
+                        </a></li>
                                  <li> <a class="nav-link" href="{{ route('home') }}">
                                         {{ __('Back') }}
                                          </a></li>
@@ -77,7 +84,6 @@
 
 
                         {{--<li><a class="nav-link" href="{{ route('admin') }}">{{ __('Admin Login') }}</a></li>--}}
-                    @endguest
                 </ul>
             </div>
         </div>
