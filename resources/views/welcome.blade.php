@@ -388,7 +388,7 @@
                                    <table  style="font-family:'Noto Sans Gujarati';">
 
                                        <tr><td width="50px"></td><td  >અનિલ સર​ - M.Com.</td><td width="50px"></td><td style="height:50px">યોગેશ સર - B.C.A.</td></tr>
-                                       <tr><td width="50px"></td><td style="height:50px">હીના ટીચર B.Com.</td><td width="50px"></td><td>મયુરી ટીચર - B.Com.</td></tr>
+                                       <tr><td width="50px"></td><td style="height:50px">હીના ટીચર - B.Com.</td><td width="50px"></td><td>મયુરી ટીચર - B.Com.</td></tr>
                                        <tr><td width="50px"></td><td style="height:50px">પ્રિયંક સર - B.Com.Eng.</td><td width="50px"></td><td>અંકિત સર - B.E.I.T.</td></tr>
                                        <tr><td width="50px"></td><td style="height:50px">અક્શય સર - B.Com.</td><td width="50px"></td><td>પિયુષ સર - B.Com.</td></tr>
                                        <tr><td width="50px"></td><td style="height:50px">ઊમેશ સર​ - M.Com</td></tr>
@@ -492,7 +492,8 @@
                    <h2 ><strong>Our Locations </strong></h2>
                    <hr />
                    <div  style="font-family:'Noto Sans Gujarati';">
-                       <h4> <b>Address 1 :</b> ૮/૧૯૫૮-એ, ગોવિંદજીના મંદિરની સામે, શેતાન ફળિયા, ગોપીપુરા.</h4>
+                       <h4> <b>Address 1 :</b> <a href="https://www.google.co.in/maps/place/Shree+Vidhya+Coaching+Classes/@21.192377,72.8226661,17z/data=!4m8!1m2!2m1!1sshetan+faliya+gopipura!3m4!1s0x3be04e670e2f142d:0x10656d89f95462d6!8m2!3d21.1914168!4d72.825923" target="_blank">
+                                                  ૮/૧૯૫૮-એ, ગોવિંદજીના મંદિરની સામે, શેતાન ફળિયા, ગોપીપુરા. </a></h4>
                        <h4><strong>Contact:</strong> વિજય સર<br> 98251 85050 </br> 97377 91849<br/></h4>
                        <h4> <b>Address 2 :</b> બી-૯,ઉમિયા નગર સોસાયટી,ગોડદરા નહેર પાસે, પર​વટ પાટીયા.</h4>
                    <h4><strong>Contact:</strong> જાગૃતિબેન મણીકાવાલા <br> 73831 63531 <br/> </h4>
@@ -507,9 +508,9 @@
                <h2 ><strong>Social Conectivity </strong></h2>
                <hr />
                <div >
-                   <a href="#">  <img src="assets/img/Social/facebook.png" alt="facebook logo" /> </a>
-                   <a href="#"> <img src="assets/img/Social/google-plus.png" alt="google-plus logo" /></a>
-                   <a href="https://wa.me/9825185050"> <img src="assets/img/Social/whatsapp.png" alt="whatsapp logo" /></a>
+                   <a href="https://www.facebook.com/vijay.manikawala.9" target="_blank">  <img src="assets/img/Social/facebook.png" alt="facebook logo" /> </a>
+                   <a href="mailto:svcclass@gmail.com"> <img src="assets/img/Social/google-plus.png" alt="google-plus logo" /></a>
+                   <a href="https://wa.me/9825185050" target="_blank"> <img src="assets/img/Social/whatsapp.png" alt="whatsapp logo" /></a>
                </div>
            </div>
 
