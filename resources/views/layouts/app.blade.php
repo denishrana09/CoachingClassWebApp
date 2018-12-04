@@ -29,9 +29,8 @@
                 </a>
             </div>
         </nav>
-        @yield('content')
-        @yield('contentforhome')
-
+    @yield('content')
+    @yield('contentforhome')
     </div>
 </body>
 </html>
