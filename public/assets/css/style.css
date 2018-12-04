@@ -19,7 +19,7 @@ body {
 }
 
 .set-pad {
-    padding-top:35px;
+    padding-top: 10px;
 }
 .set-row-pad {
     padding-top:30px;
@@ -42,49 +42,71 @@ body {
     min-height: 70px;
 }
 
+.navbar{
+    opacity: 0.5;
+    /*color:#fff;*/
+}
 
 .navbar-inverse {
     border-color: transparent;
 }
 
-    .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-nav > li > a:hover {
-        color: #FFF;
-        padding: 22px 10px;
-    }
-
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-nav > li > a:hover {
+    color: #FFF;
+    padding: 22px 10px;
+}
 
 /*=====================================
   HOME STYLES 
     ===================================*/
 .home-sec {
-    padding-top: 10px;
-    padding-bottom: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     background: url(../img/header.jpg) no-repeat center center;
-    padding: 0;
+    background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
 }
 
-    .home-sec .overlay {
-        background: rgba(38, 57, 88, 0.89);
-        min-height: 500px;
-    }
+.home-sec .overlay {
+    background: rgba(38, 57, 88, 0.7);
+    min-height: 400px;
+}
 
-    .home-sec h1 {
-        color: #fff;
-        font-weight: 900;
-        font-size: 50px;
-        text-transform: uppercase;
-        padding-bottom: 35px;
-    }
+.home-sec h1{
+    padding-top: 20px;
+}
 
-    .home-sec h3 {
-        text-transform: uppercase;
-    }
+.fab{
+    color: lightskyblue ;
+    position: relative;
+    top:-8px;
+}
 
+.details .no-overlay{
+    background: rgba(0,0,0, 0.7);
+    color : white;
+}
 
+.home-sec h1 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 50px;
+    text-transform: none;
+    padding-bottom: 0px;
+}
+
+.home-sec h3 {
+    text-transform: none;
+}
+
+#slok{
+    margin-top: 50px;
+}
 
 .set-flexi {
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
@@ -93,7 +115,7 @@ body {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
     background-color: transparent;
     border: 0px solid #000;
-    padding-top: 120px;
+    padding-top: 10px;
 }
 
 .flex-control-nav {
@@ -108,21 +130,22 @@ body {
     ===================================*/
 
 .tag-line {
-    background: #E9E9E9;
-    color: #000;
+    /*background-color: rgba(200,200,200,0.3);*/
+    background: #dddddd;
 }
 
-    .tag-line h2 {
-        font-size: 20px;
-        font-weight: 900;
-        padding: 5px 10px 10px 5px;
-        color: #005E5A;
-    }
+.tag-line h2 {
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: 15px;
+    /*color: #005E5A;*/
+    color:black;
+}
 
-        .tag-line h2 > i {
-            margin-left: 8px;
-            margin-right: 8px;
-        }
+.tag-line h2 > i {
+    margin-left: 8px;
+    margin-right: 8px;
+}
 /*=====================================
   HEADER LINE STYLES 
     ===================================*/
@@ -139,7 +162,7 @@ h1::after {
     border: solid 2px #2f9484;
     display: block;
     width: 200px;
-    margin: 12px auto;
+    margin: 2px auto 10px auto;
 }
 
 /*=====================================
@@ -164,15 +187,15 @@ h1::after {
     transition: 0.3s;
 }
 
-    .icon-round-border:hover {
-        color: #fff;
-        border: 10px double #fff;
-        background-color: #1A94C4;
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s;
-    }
+.icon-round-border:hover {
+    color: #fff;
+    border: 10px double #fff;
+    background-color: #1A94C4;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
 
 .about-div hr {
     border: 1px solid #1A94C4;
@@ -181,7 +204,7 @@ h1::after {
 .about-div h3 {
     font-size: 25px;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 .about-div p {
@@ -194,6 +217,13 @@ h1::after {
     -moz-border-radius: 0px;
     margin-bottom: 20px;
 }
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #00b3db;
+    border-color: #285e8e; /*set the color you want here*/
+}
+
 /*=====================================
   FACULTY STYLES 
   ===================================*/
@@ -202,35 +232,37 @@ h1::after {
     color: #fff;
 }
 
-    #faculty-sec .header-line {
-        color: #fff;
-    }
+#faculty-sec .header-line {
+    color: #fff;
+}
+
 .faculty-div h4 {
     line-height:30px;
     font-weight:700;
 }
+
 .faculty-div {
     padding: 30px;
 }
 
-    .faculty-div hr {
-        border: 1px solid #1A94C4;
-    }
+.faculty-div hr {
+    border: 1px solid #1A94C4;
+}
 
-    .faculty-div h3 {
-        font-size: 25px;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
+.faculty-div h3 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: none;
+}
 
-    .faculty-div p {
-        padding-top: 10px;
-        padding-bottom: 15px;
-    }
+.faculty-div p {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
 
-    .faculty-div img {
-        border: 10px double #fff;
-    }
+.faculty-div img {
+    border: 10px double #fff;
+}
 
 /*=====================================
   CONTACT STYLES 

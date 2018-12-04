@@ -89,10 +89,17 @@ p {
   color: #fff;
   border: 2px solid #f9ad81;
 }
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #f89d69 !important;
-  border-color: #f89d69 !important;
-}
+/*.btn-primary:hover, .btn-primary:focus, .btn-primary:active {*/
+  /*background: #f89d69 !important;*/
+  /*border-color: #f89d69 !important;*/
+/*}*/
+
+/*.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {*/
+  /*color: #fff;*/
+  /*background-color: #00b3db;*/
+  /*border-color: #285e8e; !*set the color you want here*!*/
+/*}*/
+
 .btn-primary.btn-outline {
   background: transparent;
   color: #f9ad81;
